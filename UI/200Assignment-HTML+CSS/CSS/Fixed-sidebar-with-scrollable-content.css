@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    border: 1px solid #000;
+    margin: auto;
+    /* ya ne sidebar chya samor row madhe content yeil */
+    display: flex;
+}
+.navbar{
+    width: 300px;
+    background-color: rgb(50, 50, 244);
+    color: white;
+    padding: 15px;
+    /* page la scroll jari basla tari navbar ha fixed eka ch jagi rahil move nahi honar */
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+.navbar h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    text-align: center;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.navbar a:hover{
+    color: #00c385;
+    /* ya ne menu right side move hotil hover kelya var ti */
+    padding-left: 5px;
+}
+
+/* main content adjust */
+
+.content{
+    /* margin-left: 300px; */
+    padding: 25px;
+    flex: 1;
+    height: 100vh;
+    /* hya property ne fakt content  scroll hoil sidebar fixed rahile  */
+    overflow-y: auto;
+    background-color: #f8fafc;
+}
+.content h1{
+    margin-bottom: 20px;
+    color: #0f172a;
+    text-align: center;
+}
+.content p{
+    margin-bottom: 16px;
+    line-height: 1.9;
+}

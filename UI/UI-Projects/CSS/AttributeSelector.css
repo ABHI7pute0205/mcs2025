@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="text"]{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+input[type="number"]{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+a{
+    width: 10%;
+    padding: 7px;
+    margin: 20px;
+    text-align: center;
+    /*bydefaultinlineastya*/display: block;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+a:hover{
+    background-color: rgb(201, 11, 11);
+    color: white;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.tb{
+    border: 1px solid #000;
+    width: 20%;
+}
+.tb tr td{
+    border: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}

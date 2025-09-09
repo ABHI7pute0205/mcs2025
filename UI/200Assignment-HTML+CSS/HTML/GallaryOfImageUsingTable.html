@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a gallery of images using table</title>
+    <style>
+        .box{
+            width: 80%;
+            min-height: 200px;
+            border: 1px solid #000;
+            margin: auto;
+            text-align: center;
+        }
+        .box table{
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 15px;
+        }
+        .box table td{
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+        }
+        .box img{
+            width: 200px;
+            height: 200px;
+            /* object-fit: cover; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Gallry of Image Using Table</h1>
+
+        <table>
+            <tr>
+                <td><img src="../Image/jerry.jpeg"></td>
+                <td><img src="../Image/HackImg.jpg"></td>
+                <td><img src="../Image/grass1-remove-bg.png" alt=""></td>
+            </tr>
+            <tr>
+                
+                <td><img src="../Image/HackImg.jpg"></td>
+                <td><img src="../Image/grass1-remove-bg.png" alt=""></td>
+                <td><img src="../Image/jerry.jpeg"></td>
+            </tr>
+            <tr>
+                <td><img src="../Image/jerry.jpeg"></td>
+                <td><img src="../Image/HackImg.jpg"></td>
+                <td><img src="../Image/grass1-remove-bg.png" alt=""></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

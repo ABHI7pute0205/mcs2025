@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    min-height: 100px;
+    border: 1px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.logo-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    border: 1px solid #000;
+}
+.logo-menu .logo{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    /* remove it after design done */
+    /* border: 1px solid #000; */
+    margin: 2px;
+}
+.logo-menu .menu{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: start;
+    /* border: 1px solid #000; */
+}
+.menu ul {
+    list-style-type:none;
+    width: 100%;
+    display: flex;
+}
+.menu ul li {
+     padding-left: 30px;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu ul li a:hover{
+    background-color: skyblue;
+    color: white;
+
+}
+
+.logo-menu .search{
+    width: 20%;
+    /* also remove this one at last  */
+    margin: 2px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    width: 100%;
+    height: 350px;
+    /* margin: 2px; */
+    border: 1px solid #000;
+}
+.slider img{
+    width: 100%;
+    height: 350px;
+}
+/* searvice row  */
+.our-services{
+    width: 100%;
+    min-height: 200px;
+    /* margin: 2px; */
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-services .box{
+    width: 100%;
+    min-height: 200px;
+    /* remove this border to display ourservice box clean and proper */
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 1px; */
+}
+.our-services .web {
+    text-align: center;
+}
+
+.our-services .search{
+    text-align: center;
+}
+
+.our-services .online{
+    text-align: center;
+}
+
+.our-services .social{
+    text-align: center;
+}
+/* main containt of page */
+
+.content{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E3E4E;
+    color: white;
+    /* border: 1px solid #000; */
+    /* flex-direction: column; */
+}
+/* .namebtn{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+.content .box1{
+    width: 100%;
+    min-height: 200px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+}
+.box1 img{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 5px;
+}
+.box1 p{
+    text-align: center;
+    padding: 5px;   
+}
+/* What we offer */
+
+.container .wwoff{
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* margin: 2px; */
+}
+.wwoff .heading  h2{
+    color: rgb(6, 150, 207);
+    margin-top: 15px;
+}
+.wwoff .box2{
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* Testinomailes */
+
+.content2{
+    width: 100%;
+    min-height: 150px;
+    /* display: flex;
+    justify-content: center;
+    align-items: start; */
+    margin-top: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+}
+.content2 h3{
+    display: flex;
+    color: rgb(3, 61, 85);
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.content2 p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.content2 img{
+    width: 50px;
+    min-height: 50px;
+}
+/* Footer */
+.fotter{
+    background-color: skyblue;
+    margin-top: 5px;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #000;
+    background-color: #2E3E4E;
+    color: white;
+    display: flex;
+}
+.fotter .box3{
+    width: 100%;
+    height: 100px;
+    border: 1px solid white;
+    flex-basis: 250px;
+    text-align: center;
+    line-height: 100px;
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  min-height: 500px;
+  border: 1px solid #000;
+  margin: auto;
+  padding: 10px;
+}
+.container h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: lightskyblue;
+}
+
+/* gaalry using css Grid */
+.gallary {
+  /* ya ne same spcae gheun tya container madhe 4 equal columns create hotil */
+  display: grid;
+  /* tya photo che width eith set zale means tya 80% madhe same width che 4 box create zale and tya na height dele .photo madhe => grid madhe new row he te je 4 box create kele tya n chyat aan khi ek div add kar nya cha praytn kelya var ti te new ROW ka yet auto- so row declared kara y che garj nahi*/
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  /* width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between; */
+}
+.photo {
+  /* Grid madhe flex cha use kela  */
+  border: 1px solid #000;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+
+  /* border: 1px solid #000;
+    width: 220px;
+    margin: 5px;
+    display: grid; */
+}
+
+/* Media Query  yat 2 break point thevle karn tablet madhe eka khali ek sathi two column's display zale pahije and mobile device madhe 1 ch column disla pahije */
+
+@media only screen and (max-width:1130px){
+  .gallary{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media only screen and (max-width:780px){
+  .gallary{
+    grid-template-columns: repeat(1,1fr);
+  }
+}

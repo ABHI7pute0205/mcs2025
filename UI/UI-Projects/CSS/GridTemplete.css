@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  min-height: 100px;
+  margin: auto;
+  border: 1px solid lightgrey;
+  /*  */
+  display: grid;
+  /* 1fr che templeter madhe 4 column create hotil */
+  grid-template-columns: repeat(4, 1fr);
+  /* 6 rows create hotil  */
+  grid-template-rows: 60px 50px auto 200px auto 60px;
+  gap: 0.5rem;
+
+  /* here we implement how to merge rows and columns by using their names which are we provide in child classes e.g
+    eith aapn 
+    .heade class ye tya class madhe [grid-area:header;] nava chya property cha use kela aani sangitl ki parent class madhe tya cha 4 column outOF kiti area cover kara y cha ye by using [grid-templete-areas:"header header header header";] ek row ti che column merge karun  purn zalya var same baki chya pan row-column sathi kiti tya ne column merge kele pahije te mention kel 
+  */
+
+  grid-template-areas:
+    "header header header header"
+    "menu menu menu menu"
+    "slider slider slider slider"
+    "sidebar box1 box2 box3"
+    "sidebar content content content"
+    "footer footer footer footer";
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.item {
+  padding: 10px 20px;
+  color: white;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.header {
+  background-color: #18230f;
+  grid-area: header;
+  /* ya la display flex kel kar n icon and join us che image eka ch ROW madhe ghya y che hoti for this */
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  font-size: 200;
+}
+/* ya cha parent display flex kela i.e header mang ha tya chya ch line madhe row madhe gela auto  */
+.social {
+  display: flex;
+  margin-top: 10px;
+}
+.social i {
+  margin-left: 5px;
+  font-size: 22px;
+  font-weight: 100;
+}
+.social i:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.social img {
+  /* join us che image */
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+}
+#whatsapp-clr {
+  color: green;
+}
+#linkedin-clr {
+  color: #2f7dcb;
+}
+.menu {
+  background-color: #18230f;
+  grid-area: menu;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+ul li {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+ul li a:hover {
+  background-color: #255f38;
+  color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.slider {
+  background-color: #18230f;
+  grid-area: slider;
+  width: 100%;
+}
+.slider img {
+  width: 100%;
+  /* height: 400px; */
+}
+
+.sidebar {
+  background-color: #27391c;
+  grid-area: sidebar;
+  height: 51%;
+}
+.sidebar img {
+  width: 100%;
+  height: 100%;
+}
+.box1 {
+  background-color: #255f38;
+  grid-area: box1;
+}
+.box1 img {
+  width: 100%;
+  height: 100%;
+}
+.box2 {
+  background-color: #255f38;
+  grid-area: box2;
+}
+.box2 img {
+  width: 100%;
+  height: 100%;
+}
+.box3 {
+  background-color: #255f38;
+  grid-area: box3;
+}
+.box3 img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  /* background-color: #18230f; */
+  position: relative;
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px, 200px;
+  gap: 5px;
+}
+.box {
+  position: relative;
+  background-color: gray;
+}
+.box img {
+  width: 100%;
+}
+/* he image dusrya image  var ti ghya y che mhanun tya cha grandparent - parent - child - and child of child position relative kele [constant] */
+.offer img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.order-now {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.footer {
+  background-color: #18230f;
+  grid-area: footer;
+}

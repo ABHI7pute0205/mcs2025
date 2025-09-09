@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert an image aligned to the left of text</title>
+    <style>
+      .box {
+        width: 80%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+        /* flex ne image and text eka row madhe yeil same row madhe */
+        display: flex;
+        /* align-items: center; */
+      }
+      img{
+        width: 200px;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: 5px;
+        /* flex-basis: 50%; */
+        /* padding: 15px; */
+      }
+      p{
+        border: 1px solid #000;
+        margin: 5px;
+        text-align: center;
+        width: 50%;
+        /*align-items: right; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <img src="../Image/jerry-remove-bg.png" alt="Not Found" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          doloribus itaque laudantium obcaecati natus repellendus molestiae esse
+          fugiat, minus quae distinctio dolorum minima maiores beatae magni
+          nobis repellat eaque! Praesentium.
+          
+        </p>
+    </div>
+  </body>
+</html>

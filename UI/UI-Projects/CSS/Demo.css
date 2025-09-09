@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  min-height: 100px;
+  border: 1px solid #000;
+  margin: auto;
+  /* display: flex; */
+  /* display: flex; -> kelya var bydefault sagl content row la jat tar tya natar ch silder vagere jar column madhe eka khali ek aana y ch asl tar flex-direction:column; kara y che  */
+  background-color: lightgray;
+}
+.container .nav {
+  display: flex;
+  /* ya la flex kel grow shrink honya sathi as per requirement  */
+  width: 100%;
+  height: 60px;
+  border: 1px solid #000;
+  padding: 5px;
+}
+.container .nav .logo {
+  color: red;
+  flex-basis: 50%;
+  /* logo la pan 50% area lag to ye tya mul ya la pan flex-baisi:50% set kara y ch complsory  */
+  border: 1px solid #000;
+  padding: 13px;
+  
+
+}
+.container .nav .menu {
+  border: 1px solid #000;
+  color: red;
+  flex-basis: 50%;
+  /* aata eith logo la 50% aani menu la 50% dya y ch ye tar 2 gha na pan flex-basis:50% set kara y ch tar ch half half portion dive hoto */
+  padding: 10px;
+  display: flex;
+  /* display : flex; kel tar ch hya 2 property apply hotat */
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+  /* Display inline Block ne sagle menu eka line madhe block madhe yetil  */
+  display: inline-block;
+  margin: 20px;
+  
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  padding: 7px;
+  color: red;
+}
+
+.menu ul li a:hover{
+    background-color:lightgreen;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.container .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  color: red;
+}
+
+.slider img{
+    width: 100%;
+    height: 350px;
+}
+
+.container .content {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .box {
+  display: flex;
+  flex-basis: 32%;
+  border: 1px solid #000;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  /* width: 100%; */
+}
+
+.box img{
+    width: 100%;
+    height: 200px;
+}
+
+.content .box .box1 {
+  color: darkgreen;
+  width: 100%;
+  margin: 15px;
+  border: 1px solid #000;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer {
+  width: 100%;
+  height: 80px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 1px;
+}

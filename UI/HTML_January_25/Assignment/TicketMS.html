@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Management System</title>
+    <link rel="stylesheet" href="../CSS/TicketMS.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Ticket Management System</h1>
+
+      <form>
+        <table>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter Your Name"
+                required
+              />
+            </td>
+          </tr>
+
+          <td>
+            <input
+              type="number"
+              id="Tno"
+              name="Tno"
+              placeholder="Enter Your Ticket Number"
+              required
+            />
+          </td>
+        </tr>
+
+        <td>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+            />
+          </td>
+        </tr>
+
+        <td>
+            <input
+              type="text"
+              id="start"
+              name="start"
+              placeholder="Current Location"
+              required
+            />
+          </td>
+        </tr>
+
+        <td>
+            <input
+              type="text"
+              id="end"
+              name="end"
+              placeholder="Destination Location"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr class="btn">
+            <td>
+                <button class="bt">Book Ticket</button>
+            </td>
+        </tr>
+
+        <tr class="btn">
+            <td>
+                <button class="vh">View History</button>
+            </td>
+        </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

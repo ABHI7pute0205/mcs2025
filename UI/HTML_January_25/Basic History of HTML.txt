@@ -1,0 +1,310 @@
+12-Feb-2025
+----------------
+WEB SITE COLLECTION OF WEB PAGES
+
+
+Client     --- >        server
+request   < ---         response
+
+purpose -- Data Sharing (required- IP address)
+
+*two way's to establish connection:
+ -wired
+ -wireless
+
+-request --> URL hit  karun request send kart
+
+----------
+Server=
+ - high configuration ast 
+ - high RAM,ROM,STROAGE....Like That
+
+           |IP ADD.|
+https://www.linkdin.com/message  // Hyper-huge
+HYPER TEXT TEANSFER PROTOCOL
+
+Request--->
+Client - router - router -...n =Tower= router - router - Server 
+        <---Response
+
+protocol--Set of Rules
+ 
+DNR->DOMAIN NAME RESOLUTION
+DNS->DOMAIN NAME SPACE 
+Routing Table - 
+
+
+ISP = Internet Service Provider
+
+
+* Client-Front end
+-HTML
+-CSS
+-JS
+-React     
+-Bootstrap
+
+Browser can only understand -- HTML,CSS,JS
+
+WEBSITE--> Collection of Web Pages is called..
+          which are stored on a server
+
+
+
+-------------------------
+HTML-Hyper Text Markup Language
+
+Hyper- eka web page chya aat khup sare web page 
+text- 
+Markup - use of tag's to display content 
+Langaue -  Medium 
+-------------------------
+
+
+Interview-
+asked (opening + closing + content) -> element    
+-------------------------
+
+* Tag's--> 
+ -Basic functional component which provide meaning to the content 
+ - different tags provide different meanings 
+ 
+----------------------------------------
+<!DOCTYPE html> --> not mandatory Always
+  - always use LATEST VERSIONS to execute(NEW VERSIONS)
+  
+<html> --> Root Tag , Top Level TAG 
+
+<head> --> it contains a MetaData  [Data About Data]  eka data chya aat dusra data 
+
+e.g e_id - - > contains all information about employee
+
+-- whatever you  written in  Meata tag which is usefull for DEVLOPER  
+
+(written in <head> tag is all usefull for DEVLOPER)
+-------------------------------------
+
+* Attributes --> it provides Additional information     about Tag  
+
+-------------------------------------
+--------------
+
+move from one page to another page we create a link using ANCHOR TAG
+
+
+to create a Link -->
+  <Ancher Tag>
+
+*href-> it is use to specify the detination web page
+------------------------------------
+
+
+*target --> wether to open the destination webpage in same tab or in different tab
+
+values with target
+1] self --> same  tab madhe open karnya sathi
+2] top
+* 3] blank  --> new tab madhe open karnya sathi
+4] parent 
+
+ <a> target href </a>
+---------------------------------------
+
+
+.in --> india madhe ch chalt 
+.com--> Purn world wild chalt te web site 
+.org--> Any Organization
+
+----------------------------------------------
+Types of URL---
+ 1] Absolute URL
+ 2] Relative URL
+
+
+./ -->  to access file which are closer 
+
+-------------------------
+
+Types of Tag's->
+
+1.Paired tag  -- opening and closing tag
+2.unpaired tag -- opening tag only no attributes e.g <br> <hr>
+3.self closing tag -- opening tag only it has an attributes
+
+------------------------------
+to create a link we use Anchor tag 
+
+href - jya pan page varti move kara y ch tya che link 
+target- destination web page tya ch TAB madhe open kara y cha next TAB madhe open kara y ch tya sathi
+
+    <a href="https://instagram.com"
+    target="_blank">instagram</a><br>
+
+target TAG = _blank ne new page new TAB madhe open hot 
+
+------------------------------
+
+
+        <img  height="500px" width="400px"
+        src="./Images/coding1.jpg" alt="coding1">
+
+
+ if image loaded alt does not work else it work 
+
+-----------------------------------------------------
+
+alt Attribute -
+              to render the image 
+ tya jagi kon ti image hoti te sangat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================================================================================
+Basic History of HTML
+-implemented in 1989
+-think about it in 1880
+-Tim Berners-Lee
+ 
+- META Keyword is used for making a web site SEO (Search Engine Optimization) friendly.
+
+
+ 1] What is HTML ?
+ -> html can be used for to make the Structure of the page .
+ - the full form of HTML is HYPERTEXT MARKUP LANGUAGE 
+
+ 2] What is Hypertext ?
+ -> A Text within text is called HYPERTEXT.
+
+  
+ 3] what is the basic structure of html ?
+ -> <html>
+       <head>
+          <title> Basic </title>
+       </head>
+       <body>
+        .
+        .
+        .
+       </body>
+    </html>
+---------------------------------
+ ek main floder tyar kara y ch  tyat 
+ css
+ images
+ js
+ audio
+ video
+ index.html che file tyar kara y che
+---------------------------------------------
+  extensions required-
+
+  1] live server
+  2] Bracket pair colorization toggler
+  3] Prettier-code formatter
+  4] Auto Rename Tag  -- open tag ch name change kel ki close ch auto change hot
+  5] Auto close Tag
+  6] css-auto-prefix -- ashya property find kar t ki tya saglya browser var ti chal t
+  7] Intellisense for CSS class names in HTML
+  8] open in browswe
+  9] 
+  10] HTML End Tag Lable
+-----------------------------------------------
+
+google marathi input tools
+   
+free vector images 
+-------------------------------------
+Attribute -- extra information about TAG  
+

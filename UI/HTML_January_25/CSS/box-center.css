@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.containter {
+  /*vh->viewheightmakepagesflexibleonthedevicessuchasmobile,laptop,tabletvw->adustwidthasperdevice*/
+  height: 750px;
+  background-color: #b49393;
+  color: white;
+
+  /*UsingFlex*/
+  /* display: flex;
+  justify-content: center;
+  align-items: center; 
+  */
+
+  /*Using Position -> Parent  */
+  position: relative;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  /*usingposition->child*/position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  /*Usingmargin,padding-->using wthiswaywecanonlycenterasingletextnoawholetextandabox*//*margin: auto;
+  line-height: 750px;
+  */text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

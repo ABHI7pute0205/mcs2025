@@ -1,0 +1,164 @@
+* {
+  /*by default hya property 0 assign kar to aapn*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* width 100% chya baher gelya var ti horizontal scrollbar yeto he property use kelya var ti to schrollbar yet nahi  */
+}
+/* Variable declaration */
+:root {
+  --marginTop: 5px;
+}
+.container {
+  width: 80%;
+  min-height: 100px;
+  /* border: 1px solid #000; */
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.container .logo {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+}
+.logo h1 {
+  padding: 10px;
+  color: white;
+}
+.nav {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  margin-top: var(--marginTop);
+}
+
+.nav ul {
+  /* list . yetat  unorder list la by default circle yetat te remove kar nya sathi he property */
+  list-style-type: none;
+  width: 100%;
+}
+
+.nav ul li {
+  /* Display : inline - block mhanje eka ch line madhe sagale box [display: block mhanje eka khali ek yetil] */
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 10px; /*saglya element chya left side la padding lagl */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.nav ul li a:hover {
+  background-color: lightgray;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.slider {
+  width: 100%;
+  height: 400px;
+  margin-top: var(--marginTop);
+}
+.slider img {
+  width: 100%;
+  height: 400px;
+}
+
+/*Parent class*/
+.main-box {
+  width: 100%;
+  /* min-height: 200px; */
+  /* background-color: darkslategray; */
+  margin-top: var(--marginTop);
+}
+/*child class ye main-box cha 2 child bar , area */
+.main-box .bar {
+  width: 20%;
+  height: 300px;
+  background-color: lightgray;
+  float: left;
+  text-align: center;
+  /* min-height jevdhe dele tevdhe ch eith pan dya y che line height */
+  line-height: 300px;
+}
+.main-box .area {
+  width: 78%;
+  min-height: 300px;
+  /* background-color: lightgrey; */
+  float: right;
+  /* image text photo la adjust kar nya sathi he comment kel */
+  /* text-align: center; */
+  /* line-height: 300px; */
+}
+
+/* custom class to clear float issue overlaping ch -hya class ne parent class ha child chi height use karto - */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  margin-top: var(--marginTop);
+}
+.footer p {
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+.text-photo {
+  width: 100%;
+  min-height: 300px;
+}
+.text-photo .text {
+  width: 50%;
+  min-height: 300px;
+  float: left;
+}
+.text p {
+  text-align: justify;
+  padding: 15px;
+}
+.text-photo .photo {
+  width: 45%;
+  height: 300px;
+  float: right;
+}
+.photo img {
+  width: 100%;
+  height: 300px;
+}
+
+/* Swapp imgage content */
+.photo-text {
+  width: 100%;
+  min-height: 300px;
+}
+.photo-text .text {
+  width: 50%;
+  min-height: 300px;
+  float: right;
+  /* Image and Contenet paragraph swap hoil left right kelya var ti float property */
+}
+.text p {
+  text-align: justify;
+  padding: 15px;
+}
+.photo-text .photo {
+  width: 45%;
+  height: 300px;
+  float: left;
+}
+.photo img {
+  width: 100%;
+  height: 300px;
+}

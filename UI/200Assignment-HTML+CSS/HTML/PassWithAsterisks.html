@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Mask with Asterisks</title>
+  </head>
+  <body>
+    <form>
+      <label for="pwd">Password:</label>
+      <input type="text" id="pwd" oninput="maskWithAsterisks(this)" />
+    </form>
+
+    <script>
+      function maskWithAsterisks(input) {
+        // get actual typed text from dataset
+        let real = input.dataset.real || "";
+        let newVal = input.value;
+
+        // detect if character added or deleted
+        if (newVal.length > real.length) {
+          // user typed new char -> add to real value
+          real += newVal.charAt(newVal.length - 1);
+        } else {
+          // user deleted -> shrink real value
+          real = real.substring(0, newVal.length);
+        }
+
+        // store actual password
+        input.dataset.real = real;
+
+        // show only asterisks
+        input.value = "*".repeat(real.length);
+      }
+    </script>
+  </body>
+</html>

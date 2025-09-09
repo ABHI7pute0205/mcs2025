@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a form for feedback with textarea.</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 60%;
+            border: 1px solid #000;
+            min-height: 200px;
+            margin: auto;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box h1{
+            text-align: center;
+            color: darkviolet;
+        }
+        .box table{
+            border: 1px solid #000;
+            min-height: 100px;
+            margin-top: 5px;
+            padding: 10px;
+        }
+        .box .lbl{
+            font-size: 22px;
+            text-align: center;
+            padding: 25px;
+            color: darkkhaki;
+        }
+        .box textarea{
+            width: 250px;
+            font-size: 20px;
+            color: darkslateblue;
+            /* border: 1px solid #000; */
+            /* margin: auto; */
+            /* align-items: center; */
+            /* padding: 20px; */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <form >
+            <table>
+                <h1>Feedback With Textarea</h1>
+
+                <tr>
+                    <td class="lbl">
+                        <label for="feedback">Feedback  : </label>
+                    </td>
+                    <td>
+                        <textarea name="feedback" cols="25" rows="5"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 80%;
+  min-height: 100px;
+  margin: auto;
+  border: 1px solid #000;
+}
+.navbar {
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px;
+  /* ya ne logo menu row madhe yeil */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  /* border: 1px solid #000; */
+  flex-basis: 50%;
+  padding: 15px;
+}
+/* menu */
+
+.menu {
+  /* border: 1px solid #000; */
+  flex-basis: 50%;
+}
+.menu ul {
+  display: flex;
+  /* display flex ne menu row madhe jatil =>  means yat le je unorder list ye te ul row la jatil*/
+  justify-content: end;
+  padding: 15px;
+}
+.menu ul li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 7px;
+  /* border: 1px solid #000; */
+}
+
+.menu ul li:hover {
+  border-bottom: 3px solid red;
+}
+
+/* media query code  */
+
+@media only screen and (max-width: 574px) {
+  /* ya ne nav-bar ha 540 px chya aat aalya var column la jaiel means logo chya khali yeil */
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+  .menu ul {
+    /* menu madh le je unorder list ye ul te baki chya device la row madhe rahil and hya break point la te column la jatiel means mobile b=device sathi */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .menu ul li {
+    margin: 8px;
+  }
+}

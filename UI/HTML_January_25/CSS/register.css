@@ -1,0 +1,100 @@
+.box {
+  width: 60%;
+  min-height: 100px; /* tya content nusar box che height adjust zali pahije tya sathi min-height */
+  margin: auto;
+  border: 1px solid lightgray;
+  padding: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.box h2 {
+  /* Box madhla h2 tya la target kela */
+  text-align: center; /* Box madhl content center la ghenya sathi */
+}
+
+.box table tr,
+td {
+  border: 1px solid lightgreen;
+  padding: 5px;
+}
+
+.box table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.lbl {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 70%;
+  padding: 5px;
+  font-size: 17px;
+  outline: none;
+}
+input[type="radio"] {
+  font-size: 18px;
+}
+.cal {
+  width: 70%;
+  padding: 5px;
+  font-size: 17px;
+}
+.course {
+  width: 72%;
+  padding: 5px;
+  font-size: 17px;
+}
+.lblCheck {
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  /* width: 20px;
+  height: 20px;
+  margin-top: 5px; */
+  /* Check Box cha Color change hoto  */
+  accent-color: green;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0, 10px, 5px, gray;
+  background-color: black;
+}
+.add {
+  width: 72%;
+}
+.regbtn {
+  width: 120px;
+  height: 40px;
+  background-color: royalblue;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  pad: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.clrbtn {
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  pad: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}

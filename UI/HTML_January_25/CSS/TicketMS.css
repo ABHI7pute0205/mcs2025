@@ -1,0 +1,51 @@
+.box {
+  width: 40%;
+  min-height: 100px;
+  margin: auto;
+  background-color: #fcfcfe;
+  border: 1px solid gray;
+}
+.box h1 {
+  text-align: center;
+  padding-top: 5px;
+}
+.box table tr,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.box table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 90%;
+  padding: 5px;
+  font-size: 17px;
+  outline: none;
+}
+.btn td {
+  padding-left: 220px;
+}
+.btn td .bt {
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: green;
+  color: white;
+}
+
+.btn td .vh {
+  width: 150px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  /* border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ; */
+}

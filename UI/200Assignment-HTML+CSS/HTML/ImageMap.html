@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insert an image with map attribute</title>
+    <style>
+      .box {
+        width: 80%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+        text-align: center;
+      }
+
+      .box img {
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Image with Clickable Areas</h1>
+
+      <!-- one image with one map -->
+      <img src="../Image/apple.jpeg" usemap="#mymap" />
+
+      <map name="mymap">
+        <!-- Circular Area -->
+        <area
+          shape="circle"
+          coords="75,71,38"
+          href="https://chatgpt.com/"
+          target="_blank"
+          alt="Go to ChatGPT"
+        />
+
+        <!-- Rectangle Area -->
+        <area
+          shape="rect"
+          coords="161,11,240,45"
+          href="https://www.w3schools.com/"
+          alt="Go to W3Schools"
+          target="_blank"
+        />
+
+        <!-- Polygon Area -->
+        <area
+          shape="poly"
+          coords="165,58,188,87,157,135,111,117,105,94,137,57"
+          href="https://www.google.com/"
+          alt="Go to Google"
+          target="_blank"
+        />
+
+        <!-- Extra Rectangle Area -->
+        <area
+          shape="rect"
+          coords="50,180,200,220"
+          href="https://www.yahoo.com/"
+          alt="Go to Yahoo"
+          target="_blank"
+        />
+
+        <!-- Another Circle Area -->
+        <area
+          shape="circle"
+          coords="200,200,30"
+          href="https://www.bing.com/"
+          alt="Go to Bing"
+          target="_blank"
+        />
+      </map>
+    </div>
+  </body>
+</html>

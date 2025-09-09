@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert an image aligned to the right of text</title>
+    <style>
+      .box {
+        width: 80%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+        display: flex;
+        /* align-items: center; */
+      }
+      .txt {
+        border: 1px solid #000;
+        margin: 10px;
+        text-align: center;
+        /* Flex-basis:50% ne ha area text sathi 50% asign zala and inage sathi 50% */
+        flex-basis: 50%;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .imgage {
+        flex-basis: 50%;
+        border: 1px solid #000;
+        margin: 5px;
+        /* here if we change direction of the image from left to right and right to left and in a center using tec-align:left  */
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="txt">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          neque consequatur deleniti at, quod ipsa cum dolore quaerat doloribus!
+          Dolor suscipit fuga quos quis. Incidunt doloremque beatae dolores
+          voluptatum rerum!
+        </p>
+      </div>
+      <div class="imgage">
+        <img src="../Image/jerry.jpeg" alt="Image not found" />
+      </div>
+    </div>
+  </body>
+</html>

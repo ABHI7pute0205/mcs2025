@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loader {
+        width: 80px;
+        height: 80px;
+        border: 8px solid #f3f3ff;
+        border-top: 8px solid rgb(79, 79, 238);
+        /* tya ne circle hoil  border-top blue kele */
+        border-radius: 50%;
+
+        animation-name: loader;
+        animation-duration: 1s;
+        /* animation iteration count ne te loader countinously firat rahil */
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes loader {
+        from {
+          /* rotate hoil 0 deg pasun tar 360 madhe  */
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      /* Multiple condition aslya tar % cha use kara y cha and limited 2 aslya tar ek ch tar from and to cha use kara y cha  */
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

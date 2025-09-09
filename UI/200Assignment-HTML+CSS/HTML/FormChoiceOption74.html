@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a form for survey with multiple-choice questions.</title>
+    <style>
+      .box {
+        width: 50%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+      }
+      .box h1 {
+        /* border: 1px solid #000; */
+        color: darkgoldenrod;
+        text-align: center;
+      }
+      .box table {
+        border: 1px solid #000;
+        padding: 20px;
+        margin: 40px;
+        border-radius: 20px;
+      }
+      .lbl{
+        font-size: 20px;
+        text-align: center;
+        /* border: 1px solid #000; */
+        padding: 15px;
+        color: darkorchid;
+      }
+      .rd{
+        /* color: red; */
+        font-size: 18px;
+        text-align: center;
+
+      }
+      /* using this we can grow the radio btn o with 50% bigger than original it is depend on browser how much grow or shrink means radio btn is browser dependent 
+      transform:scale(1.5)  radio btn small big hoil
+      font-size : text small big hot  */
+      input[type="radio"]{
+        transform: scale(1.3); 
+        margin: 5px;
+        /* width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        appearance: none;
+        cursor: pointer; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <table>
+          <h1>Survey Form With Multiple Choice Optins</h1>
+          <tr>
+            <td class="lbl">
+              <label for="que"></label>How satisfied are you with our Services :</label>
+            </td>
+            <!-- eka veles At a Time ek ch Radio btn jar select kara y ch asel tar "name" attribute cha use kara y cha  -->
+            <td class="rd"><input type="radio"name="Services" />Very satisfied</td>
+            <td class="rd"><input type="radio"name="Services" /> satisfied</td>
+            <td class="rd"><input type="radio"name="Services" /> Neutral</td>
+            <td class="rd"><input type="radio"name="Services" /> Dissatisfied</td>
+          </tr>
+          <tr>
+            <td class="lbl">
+                <label for="que"> Which Platform do you use the most ?</label>
+              </td>
+              <td class="rd"><input type="radio">Mobile App</td>
+              <td class="rd"><input type="radio">Website</td>
+              <td class="rd"><input type="radio">Social media</td>
+              <td class="rd"><input type="radio">Others</td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+                <label for="que">Where Do You See Yourself in Next 5 years </label>
+              </td>
+              <td class="rd"><input type="radio">At Home</td>
+              <td class="rd"><input type="radio">Top Of Industry</td>
+              <td class="rd"><input type="radio">Social media</td>
+              <td class="rd"><input type="radio">Other Places</td>
+          </tr>
+          <td class="lbl">
+            <label for="que"> Which Platform do you use the most ?</label>
+          </td>
+          <td class="rd"><input type="radio">Mobile App</td>
+          <td class="rd"><input type="radio">Website</td>
+          <td class="rd"><input type="radio">Social media</td>
+          <td class="rd"><input type="radio">Others</td>
+      </tr>
+
+      <tr>
+        <td class="lbl">
+            <label for="que">Where Do You See Yourself in Next 5 years </label>
+          </td>
+          <td class="rd"><input type="radio">At Home</td>
+          <td class="rd"><input type="radio">Top Of Industry</td>
+          <td class="rd"><input type="radio">Social media</td>
+          <td class="rd"><input type="radio">Other Places</td>
+      </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

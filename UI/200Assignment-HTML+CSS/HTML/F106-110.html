@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All-in-One Form Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .step {
+        display: none;
+      }
+      .step.active {
+        display: block;
+      }
+      #progressContainer {
+        width: 100%;
+        background: #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      #progressBar {
+        width: 0%;
+        height: 20px;
+        background: #4caf50;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+      }
+      .btn {
+        margin: 5px;
+        padding: 8px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>All-in-One Multi-Step Form</h2>
+
+    <!-- Progress Bar -->
+    <div id="progressContainer">
+      <div id="progressBar">0%</div>
+    </div>
+
+    <!-- Multi-step form -->
+    <form
+      id="allForm"
+      method="post"
+      action="/submit"
+      enctype="multipart/form-data"
+    >
+      <!-- Step 1 -->
+      <div class="step active">
+        <h3>Step 1: Search (GET Example)</h3>
+        <label>Search Query:</label>
+        <input
+          type="text"
+          name="query"
+          placeholder="Type to search (GET style)"
+          required
+        />
+        <br /><br />
+        <button type="button" class="btn" onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step">
+        <h3>Step 2: Login (POST Example)</h3>
+        <label>Username:</label>
+        <input type="text" name="username" required /><br /><br />
+        <label>Password:</label>
+        <input type="password" name="password" required /><br /><br />
+        <button type="button" class="btn" onclick="prevStep()">Previous</button>
+        <button type="button" class="btn" onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step">
+        <h3>Step 3: Upload File</h3>
+        <input type="file" name="document" required />
+        <br /><br />
+        <button type="button" class="btn" onclick="prevStep()">Previous</button>
+        <button type="button" class="btn" onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step">
+        <h3>Step 4: Captcha Verification</h3>
+        <p id="captchaText"></p>
+        <input
+          type="text"
+          id="captchaInput"
+          placeholder="Enter captcha"
+          required
+        />
+        <br /><br />
+        <button type="button" class="btn" onclick="prevStep()">Previous</button>
+        <button type="button" class="btn" onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step">
+        <h3>Step 5: Confirm & Submit</h3>
+        <p>Review your details and submit the form.</p>
+        <button type="button" class="btn" onclick="prevStep()">Previous</button>
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+
+    <script>
+      let currentStep = 0;
+      const steps = document.querySelectorAll(".step");
+      const progressBar = document.getElementById("progressBar");
+
+      function showStep(n) {
+        steps.forEach((step, i) => step.classList.toggle("active", i === n));
+        updateProgress();
+      }
+
+      function nextStep() {
+        if (currentStep < steps.length - 1) currentStep++;
+        showStep(currentStep);
+      }
+
+      function prevStep() {
+        if (currentStep > 0) currentStep--;
+        showStep(currentStep);
+      }
+
+      function updateProgress() {
+        const percent = Math.round(((currentStep + 1) / steps.length) * 100);
+        progressBar.style.width = percent + "%";
+        progressBar.textContent = percent + "%";
+      }
+
+      // Captcha
+      function generateCaptcha() {
+        const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+        let captcha = "";
+        for (let i = 0; i < 5; i++) {
+          captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        document.getElementById("captchaText").textContent =
+          "Captcha: " + captcha;
+        return captcha;
+      }
+
+      let currentCaptcha = generateCaptcha();
+
+      document.getElementById("allForm").onsubmit = function () {
+        const input = document.getElementById("captchaInput").value;
+        if (input !== currentCaptcha) {
+          alert("Captcha incorrect! Try again.");
+          currentCaptcha = generateCaptcha();
+          return false;
+        }
+        alert("Form submitted successfully!");
+        return true;
+      };
+    </script>
+  </body>
+</html>

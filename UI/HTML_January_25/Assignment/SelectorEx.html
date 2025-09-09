@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector In Css</title>
+    <style>
+      /* .box {
+        background-color: aqua;
+        min-height: auto;
+        width: 400px;
+        margin: auto;
+        padding: 10px;
+        font-size: large;
+      } */
+
+      #outpara {
+        color: darkmagenta;
+        font-size: x-large;
+      }
+
+      #para {
+        /* this is a id selector we pass a id in a tag and access it through # symbol */
+        color: red;
+      }
+      .paragraph {
+        /* this a class Selector we define a class in a html tag and access this class in a css to apply some property on it using .(dot)  */
+        color: darkblue;
+      }
+      div,p{
+        color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Selector in Css is Nothing but  it is a Targeting Element 
+        Types -> 1] id = # 
+                 2] class = .(dot)
+                 3] group selector = tag1,tag2...tag.n 
+                 4] tag selector = img , p ,h1, etc.
+                 5] tag + class selector
+                 6] Universal selector = *(star)-->
+
+    <h1>Selector Exercise</h1>
+    <p id="outpara">
+        <h2>PARAGRAPH OUT SIDE A DIV  [in that use  id selector # ]</h2>
+      ---Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+      ducimus similique inventore? Laudantium eligendi voluptatem fugit debitis.
+      Repudiandae id cumque nulla quam sint veniam pariatur, autem architecto
+      nesciunt nostrum natus. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Expedita, repudiandae! Ratione quibusdam sunt magnam
+      debitis unde impedit recusandae sint ipsum fugit ullam! Maiores illo
+      temporibus assumenda ullam obcaecati expedita eaque.
+    </p>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+      exercitationem corrupti quis vel porro quibusdam, aliquid similique, earum
+      aperiam corporis nulla ducimus debitis ex tempora odio. Architecto facilis
+      nobis iure.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Nihil minima molestiae quo, aut tenetur eaque itaque sequi cum corrupti!
+      Ea possimus veniam temporibus fuga vitae aliquam at, dolorem harum
+      officia? Perferendis eveniet nulla adipisci itaque autem, sequi provident
+      distinctio ad dolorum! Velit similique exercitationem iste nemo officia
+      aliquam optio ea maiores, sequi ullam? Cumque aliquid quisquam veniam, hic
+      mollitia officiis! Officia nihil numquam exercitationem quod modi
+      consequatur et autem asperiores. Vel et consequuntur ullam voluptates,
+      illo, amet fugiat, enim illum nisi eius ea? Dicta et enim natus
+      consectetur ex cupiditate? Obcaecati veniam natus commodi! Delectus est
+      autem hic vel velit. Tenetur id non eius recusandae ducimus laborum eos
+      necessitatibus explicabo unde at distinctio ad, iure, delectus nesciunt
+      praesentium impedit totam. Architecto, eligendi nihil maiores et tempore
+      consequuntur, voluptates modi perferendis quis suscipit dicta obcaecati
+      mollitia repellendus? Corrupti voluptatum tenetur eligendi atque possimus
+      minima. Cum repudiandae iure, error veniam dolor tenetur?
+    </p>
+
+    <h1>Next Paragraph-2 [use class selector .]</h1>
+
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+      deserunt sunt error est aperiam? Temporibus laudantium quidem magni ut qui
+      nostrum, vel blanditiis praesentium architecto asperiores veritatis sed
+      ullam expedita. Tenetur perspiciatis corporis unde temporibus omnis
+      commodi officiis. Quisquam fugit amet ut aspernatur dolore saepe modi
+      consectetur cum ut enim voluptates mollitia odio. Libero asperiores
+      reprehenderit mollitia ducimus provident. Corporis id ad voluptatem
+      molestiae molestias quibusdam commodi. Iure explicabo cupiditate, esse
+      eligendi pariatur fugit consectetur nostrum delectus fuga dolor error!
+      Vero, adipisci quisquam. Incidunt numquam rem dolorem ut quia tempora,
+      perferendis eveniet atque maxime sint cum repudiandae aut! Expedita
+      nesciunt impedit minus excepturi! Deserunt cumque commodi, quibusdam
+      similique exercitationem quidem eligendi! Eos, atque. Natus reiciendis
+      quaerat facilis corporis dolor, odio labore laborum repudiandae atque
+      magni quo, nisi quidem temporibus officiis quibusdam soluta sapiente
+      accusamus inventore minus rem non dolorem eos eligendi aspernatur?
+      Deserunt. Minima commodi perferendis nam. Laborum minima consequuntur
+      illum voluptatem accusamus iusto dolorem illo? Pariatur, porro est
+      deleniti iure eos quos quis saepe fugiat accusantium vel nemo quaerat illo
+      quod a. Non saepe facere quod. Culpa nulla itaque tempore id odit quidem
+      nobis omnis unde ullam. Non est recusandae nisi. Maiores enim, ut modi
+      eveniet voluptatum officiis! Ex ipsum facere iste!
+    </p>
+
+    <h1>Next Paragraph-3 [group selector outertag , innertag ... n]</h1>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, obcaecati ipsam magnam eos fuga earum, inventore libero dolores dignissimos, suscipit nemo qui. Ea doloremque temporibus placeat eligendi dolor, labore tenetur?
+        </p>
+    </div>
+  </body>
+</html>

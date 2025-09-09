@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use figure and figcaption with an image</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        figure{
+            width: 80%;
+            min-height: 200px;
+            margin: auto;
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        figcaption{
+            margin-top: 10px;
+            font: italic;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image with Caption</h1>
+
+    <!-- figure this tag groups the images and its captions -->
+        <figure>
+            <img src="../Image/jerry-remove-bg.png" alt="">
+            <!--  figcaption this tag provide the caption OR description the image  -->
+            <figcaption>this is a Jerry image which always move</figcaption>
+        </figure>
+
+</body>
+</html>

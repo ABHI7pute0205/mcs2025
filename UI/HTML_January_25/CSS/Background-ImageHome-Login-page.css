@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #000;
+  margin: auto;
+  /* margin-top: 5px; */
+}
+.menu {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+}
+/* ya ne sagle anchor center la aale by default row direction la  */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.menu ul li {
+  margin-top: 10px;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.menu ul li a:hover {
+  color: red;
+}
+.content {
+  width: 100%;
+  height: 705px;
+  border: 1px solid #000;
+  background-image: url(../Images/HackImg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Je login cha box center la ye tya cha code  */
+.login {
+  width: 40%;
+  border: 1px solid white;
+  height: 250px;
+  /* background-color: white; */
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.login h1 {
+  width: 20%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+}
+.login h1:hover {
+  color: rgb(212, 60, 43);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.login form table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  width: 250px;
+  margin: 5px;
+  height: 30px;
+  /* border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px; */
+}
+button {
+  width: 250px;
+  height: 35px;
+  color: black;
+  background-color: white;
+  font-size: 1.2em;
+  border: none;
+  /* align-items: center; */
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(43, 75, 236);
+  color: white;
+}

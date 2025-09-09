@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evil HTML Table & Form</title>
+    <style>
+        table,
+        
+        th{
+            width: 600px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        caption{
+            background-color: lightgreen;
+        }
+        label{
+            color: rgb(171, 5, 5);
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <caption>a form that submits order details inside a table!</caption>
+
+            <tr>
+                <td><label>Enter Full Name : </label></td>
+                <td><input type="text" placeholder="Enter Name"></td>
+            </tr>
+
+            <tr>
+                <td><label>Enter E-Mail : </label></td>
+                <td><input type="email" placeholder="email"></td>
+            </tr>
+
+            <tr>
+                <td><label>Enter Phone Number : </label></td>
+                <td><input type="text" placeholder="Mobile Number"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Product Selection : </label>
+                </td>
+                <td>
+                    <select>
+                        <option>Select Any One</option>
+                        <option>Product 1</option>
+                        <option>Product 2</option>
+                        <option>Product 3</option>
+                        <option>Product 4</option>
+                   </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Quantity :</label>
+                 </td>
+                <td><input type="text" min="1" max="10" placeholder="min 1 max 10"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label value="add">Address : </label>
+                </td>
+                <td>
+                    <textarea rows="5" cols="25"></textarea>
+                </td>
+            </tr>
+
+
+            <tr name="payment">
+                <td>
+                    <label>Payment mode : </label>
+                </td>
+                <td>
+                    <input name="payment" type="radio">Credit Card
+                    <input name="payment" type="radio">PayPal
+                    <input name="payment" type="radio">UPI
+                </td>
+            </tr>
+
+
+            <tr value="Ss">
+                <td>
+                    <label>Upload Payment Screen Shot : </label>
+                </td>
+                <td>
+                    <input type="file" accept="image/* , pdf , doc">
+                </td>
+            </tr>
+
+
+            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+
+            <tr>
+                <td colspan="2">
+                    <button style="color: blue;">Submit</button>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+    
+</body>
+</html>

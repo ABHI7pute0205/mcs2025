@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+
+
+    <style>
+        table{
+             border: 1px solid black;
+             width: 500px;
+
+        }
+        table,
+        td,
+        th{
+            border: 1px solid black;
+            /* it will collapse merge multiple borders */
+            border-collapse: collapse;
+            text-align: center;
+        }
+        h1,
+        h4{
+            color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>About us </h1>
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim hic maxime itaque ducimus excepturi et distinctio ullam illum est amet accusantium fugiat iusto, laborum corrupti sapiente nam mollitia laboriosam iste nihil. Iusto eum laborum eius quam   minus explicabo officiis ad repellat numquam voluptate, obcaecati magni nisi.  Accusamus, unde hic? Aperiam!
+    </p>
+
+    <a href="https://google.com" target="_blank">google.com</a><br>
+    
+    <a href="https://codingclutch.com"
+    target="_blank">codingclutch</a>
+
+
+     <!-- target TAG = _blank ne new page new TAB madhe open hot  -->
+
+
+
+        <img  height="200px" width="200px"
+        src="./Images/coding1.jpg" alt="coding1">
+
+        <!-- if image loaded alt does not work else it work -->
+
+
+        <h4> order list</h4>
+
+
+       <!-- LIST -->
+   <!-- Type 1 order list -->
+
+
+         <ol type="i">  
+            <li>Product1</li>
+            <li>Product2</li>
+            <li>Product3</li>
+            <li>Product4</li>
+         </ol>
+
+
+         <h4> unorder list</h4>
+
+         <!-- Type 2 unorder list  ul  always use css for that it is good  NO START ATTRIBUTE for this [ it has only notation]-->
+
+         <ul type="square">  
+            <li>Product1</li>
+            <li>Product2</li>
+            <li>Product3</li>
+            <li>Product4</li>
+         </ul>
+
+
+         <h4> DISCRIPTIVE list</h4>
+         <!--Type 3 Discriptive list  two  <dt> discription TERM  <dd> DISCRIPTIVE DATA   -->
+
+         
+          <dl>
+            <dt>FSD</dt>
+            <dd>This if fsd course</dd>
+
+            <!-- another term -->
+
+            <dt>DS</dt>
+            <dd> THis is data structure</dd>
+          </dl>
+
+
+<!-- TABLE <table> TAG <tr> TAG <td> TAG jevdhe table row colum astil tevdhe count karun <td>  TAG ghya y che -->
+
+
+          <h1>TABLE</h1>
+
+          <table>
+ 
+            <tr>
+                <!-- <th> to give border for a heading -->
+              <th>NAME</th>
+              <th>ROLL NUMBER</th>
+              <th>GRADE</th>
+            </tr>
+
+            <tr>
+                <td>Abhi</td>
+                <td>101</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Saurabh</td>
+                <td>102</td>
+                <td>A-</td>
+            </tr>
+
+            <tr>
+                <td>Prashant</td>
+                <td>103</td>
+                <td>A+</td>
+            </tr>
+          </table>
+
+
+  
+          
+
+
+
+</body>
+</html>
+
+
+// single option select kara y ch aslya var shakyato RADIO BTN cha used kara y cha 
+
+// multiple option aslya var ch CHECKBOX cha used kara y cha
+
+
+1] <textarea name="controlname" value="" rows=" height" cols="width"> this tag is used for create a MULTILINE TEXT BOX</textarea>
+
+2]<input type="password" name="" value=""> this is used for create  a password bax
+
+3] <select name="" id="">
+    <option value=""> options to select </option>
+    <option value=""> options to select </option>
+    <option value=""> options to select </option>
+    <option value=""> options to select </option>
+</select>
+
+
+4] 
+      <!-- placeholder ka tar jar ekhadya text box madhe kahi lihi ch asel tar pan tyat kahi lehilya var te jat  -->
+     <input type="checkbox" name="" value="" placeholder=" name">: to create a CHECKBOX
+
+     <input type="radio" name="" value="">: to create a RADIO BTN 
+
+     <input type="submit"> : to create a SUBMIT btn 

@@ -1,0 +1,322 @@
+CSS -> Stands for Cascading Style sheet  and  it is use for decorate the HTML elements or pages [css help us to apply design on that layout]
+
+css provide some property to decorate html elements OR web-pages  PROPERTY means what kind of effects Or Style apply on elements
+
+Generalize Syntax of the CSS property 
+propertyName : value;
+e.g background-color:red;
+______________________________________
+How to use CSS with HTML
+    We have three types OR ways to use CSS with HTML
+
+    Priority : inline has high  > internal > external  
+
+1. Inline CSS -> we can use the CSS Style with specific Tag or HTML element OR defined Style where we declared HTML elements
+
+e.g 
+<h1 Style="background-color:red">Hello</h1>
+
+drwaback :
+-we need to write same property multiple times 
+- web-page take more time to  load 
+
+jar same Style che multiple element asle tar pratek element sathi same code repetatively write kara va lag to 
+______________________________________
+2. Internal CSS : menas we apply css for a particular page we use Style tag in heading section and write three all css property
+e.g
+<Style>
+    css property
+</Style>
+
+drwaback : 
+    -we can only use this css for a single page 
+    -Code get lengthy
+______________________________________
+3. External CSS ->
+    we create seperate .css file and link this file to multiple html web pages as per requiremnt means where we have same property in different pages 
+
+To join html and css file we have link tag 
+Syntax :
+    <link rel="Stylesheet" href="filename.css" /> 
+
+href madhe css file ch name pass kar to tya ne 2 n he file connect link hotat
+______________________________________
+NOTE :[inline > internal > external] 
+    inline css has more Priority than internal css and internal css has more Priority than External css.
+____________________________________________________________________________
+Selectors in CSS 
+    - Selector is a unique identity of css Style on a web page OR [with an HTML element to identity that element in css called Selector]
+
+types of Selectors in css
+
+1.Tag Selector -> apply css property on a particular html tag
+Syntax :  
+tagname{
+    css property
+} 
+e.g 
+h1{
+    background-color:red;
+    color:white;
+}
+here we apply css property on particular html element tya page madhe jevdhe pan h1 astil tay na hya property lagnar
+______________________________________
+2.Id Selector -> indicate by usign # in css and it is unique identity of css menas each element has different id [id do not same]
+
+Syntax : 
+#first{
+    background-color:red;
+    color:white;
+    width:100px;
+    height:100px;
+}
+means html madhe tag sobat first nava cha id use kela ye specifically to ch id target kela aani tya var ti hya property.
+e.g 
+.html
+<body>
+  <h1 id="first common">Good Morning India</h1>
+ <h1 id="second common">Good Morning India</h1>
+ <h1 id="third common">Good Morning India</h1>
+</body>
+
+.css
+#common{
+color:white;
+   width:400px;
+   height:40px;
+}
+using id Selector aapn as nahi write karu shakt because as per the rule of the id we have only one id to a each element 
+ #first{
+   background-color:red;
+   
+ } 
+ #second{
+   background-color:green;
+ } 
+ #third{
+   background-color:blue;
+ } 
+
+so to avois this problem we have .class Selector
+______________________________________
+
+3.Class Selector -> it is defined by using .(dot) in cass 
+Syntax : 
+.classname{
+    propertyname : value ;
+}
+e.g 
+.first{
+    background-color:red;
+}
+
+use in html :
+Syntax:<tagname  class=”classname  classname   classname…n”> write here description</tagname>  [we can write more than one class Selector to a single element here we avoid  problem of id Selector]
+______________________________________
+4.Attribute Selector -> we can apply css on HTML element by usign specific Attribute
+
+Syntax : 
+tagname[Attributename="value"]{
+    propertyName:value;
+}
+e.g 
+
+Example:
+Suppose consider we have tag 
+<input type=’text’ name=’name’ value=’’/>: INPUT  is TAGNAME  TYPE is attribute and text is value name is attribute and name is also and value is attribute html element.
+Example:
+
+input[type=’value’]{
+    means type=value  je aahe tya var ti css property apply kara y chya 
+ }
+
+input -> Tag name 
+type -> Attribute name
+text -> value
+
+[specifically attribute Select karun tya varti css apply hote ]
+______________________________________
+5.Nested Selector -> means we want to apply css on inner html elements or on a child elements
+Syntax :
+parentElementname childElementname{
+    propertyname:value;
+}
+e.g 
+ul li{
+    background-color:red;
+    color:white;
+    padding : 10px;
+}
+______________________________________
+6.Universal Selector -> denotated by * and the scope of the * is application level 
+Syntax : 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:borderbox;
+}
+______________________________________
+7.psuedo Selector -> helps us to perform events on html elements using css like mouse over etc.
+
+Syntax :
+
+tagname:eventname{
+    events which are perform after mouse over 
+}
+
+e.g 
+input[type="button"]:hover{
+    background-code:red;
+    color:white;
+}
+____________________________________________________________________________
+Display property in css
+
+use to managing the INLINE elements into a BLOCK LEVEL elements or BLOCK LEVEL elements in to a INLINE elements
+
+Syntax : 
+    display:inline; -> that elements display in a single line on a web page. [anchor tag <a href=" "> etc]
+
+    display:block; -> menas that elements display on a new line by default called block. [h1 , li p ]
+    [eka khali ek distat]
+
+    display:inline-block;
+    display:none;
+____________________________________________________________________________
+How to use list in css
+
+1. list-Style-type:none | circle | square | alpha | roman ; 
+-> decide how symbols mangae on web page 
+
+2. list-Style-image:url(imagePath); -> set the image with list item
+
+3. list-style-position: inside  | outside; -> this propertydecide image show inside of list or outside of list
+
+______________________________________
+Float Property : 
+    use to manage the html elements on left hand side or in right hand side 
+    [float ne kay hot eka page che 2 part hotat page divide hot 50% , 50% ]
+
+Syntax : 
+    float:left | right | initial | inherit; 
+
+______________________________________
+background-image property : 
+    set image as background to web page 
+Syntax : 
+    background-image:url("path");
+
+    background-size: width | height | auto | cover ;
+
+auto -> set the size of the image as per the parent element 
+
+cover -> set the size of the image as per the parent element 
+
+background-repeat :  repeat | repeat-x | repeat-y | no-repeat etc 
+-> this property indicates whether the background should repeat or not. If we set the no-repeat property then your background image will not show repeatedly in its parent.
+
+____________________________________________________________________________
+CSS position
+    help us to how to place the html elements on web page 
+
+Theire are 5 types of the CSS position
+
+1. Static  -> it is the default position of html elements means apper as per the flow of the page 
+
+2. Relative -> the element position as per theire neighbor elements at left , right , top ,  bottom etc .
+
+3. Absolute -> the element can position OR manage the position as per thrire parent 
+
+4. fixed -> element can not change theire psoition once  fit on web page or Place on webpage.
+
+5. Sticky -> the element is positioned based on the user scrolls 
+[means jar aapn aaplya web page madhe ekhada menu design [header] kela aani aaplya page madhe content khup ye page la scroll yet asla tar aapn khali scroll kelya varti aap la heade var ti nahi gela pahije  top la eka thika ne fix zala pahije tya sahi tya la sticky declared kar to tya ne je extra ch content ye page scroll kelya var ti tya tya header chya khali jat]
+
+____________________________________________________________________________
+Css Flex Property : 
+
+What is CSS Flex Box 
+-> it is a one dimensional layout module 
+1. Design flexible and eifficient layout
+2. Distribute space among items 
+3. control their alignment in  container
+
+flexible module -> means help us to Arrange items spacing equally , Alignment 
+
+______________________________________
+1. display: Flex;
+2. Flex-direction: row | row-reverse | column | column-reverse;
+3. flex-wrap : wrap | no-wrap ;
+    wrap -> ne jya pan div varti aaply karu tya tya div madhl content other div ADJUST hotil either in  a row direction Or in a column direction 
+
+4. justify-content: start | end | center | space-around | space-between  [arrange all items at the starting means left hande side if we use start, at Right hand side when use end , and in middle when it center  and in space-between : saglya element madhe same space divide hota , space around display the flex itmes with space before , between and after the line]  arrange in HORIZONTAL DIRECTION [Row wise center]
+
+5. align-items : arrange elements in container using VERTICLE DIRECTIONS [column wise center]
+Syntax : 
+    align-item:start | end | center | stretch | baseline ; 
+
+____________________________________________________________________________
+Flex Item 
+6. Order ->  this property can be used to mange the locations of the div start from 0th index to n-1.  
+
+7. flex-grow -> this property cover the remaning space and divides equally the width within the element  in this we can target single element also 
+
+8. flex-shrink -> default value of flex shrink is 1.  
+flex-shrink:number;
+
+9. flex-basis:50%;
+    use this property in flex instead of width [ 2 n div la jar half half width dya y che asel tar he property use kara y che float chya Aiyvaji]
+
+______________________________________
+Opacity : 
+    use when we want to create transparent background color or image then we use this 
+this property always use the values between 0 to 1 0.5 = 50% lower value is more transparent 
+
+e.g 
+   div{
+     background-image:url("d.jpg");
+     width:100%;
+     height:600px;
+     background-size:100% 600px;
+     opacity:0.3;
+   }
+
+background:rgba(red , green , blue , opacity);
+
+transform : translate(xaxis , yaxis);
+____________________________________________________________________________
+Grid layout in Css 
+
+    this system is bases on rows and columns
+
+______________________________________
+css Gradient property : 
+    display the smooth transition between two or more specific color.
+
+Define 3 typesof the Gradient
+1. Linear Gradient : a color you want to render smooth transition.
+Syntax : 
+    background-image:Linear-Gradient(direction,colors[color1,2,3,4...n]); minimum 2 colors need to pass 
+_____________________________________ 
+2. Radical Gradient -> 
+  Radial gradient is defined by its center and if we want to define radial gradient you must define at least two colors.
+
+Syntax: 
+background-image:radial-gradient(shape size at position,start color… last-color);
+_____________________________________
+3.conic Gradient -> 
+  A conic gradient is gradient with color transitions rotated around the center points.
+
+Syntax: background-image:conic-gradient([from angle],[at position],color [degree],color [degree]…….);
+
+_____________________________________
+Css shadow property : 
+1. box-shadow : 
+Box shadow property is used for apply shadow on HTML elements 
+
+Syntax: box-shadow:horizontal  verticalshadow;
+	or
+	box-shadow: horizontal  verticalshadow  color;
+	or
+	or
+	box-shadow:horizontal verticalshadow  saturation  spread  color;

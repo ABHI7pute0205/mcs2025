@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 50%;
+        height: 300px;
+        border: 1px solid #000;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+      }
+
+      .jerry {
+        background-image: url(../Images/jerry.jpeg);
+        /* image without margin padding use kar ta center la aan nya sathi  */
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        background-position: center center;
+      }
+      /* constant  */
+      .grass {
+        position: relative;
+        height: 300px;
+        z-index: -1;
+      }
+      .grass img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <div class="jerry">
+            <!-- <img src="../Images/jerry.jpeg" width="80px" height="100px" />
+          </div> -->
+          <div class="grass">
+            <img src="../Images/grass.jpeg" alt="" />
+          </div>
+    </div>
+  </body>
+</html>

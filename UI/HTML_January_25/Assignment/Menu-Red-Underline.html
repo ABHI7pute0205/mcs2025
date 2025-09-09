@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+      ul {
+        list-style: none;
+        /* display:flex; new sagle menu eka row madhe arrange hotil by default row la ast Flex-direction */
+        display: flex;
+        gap: 30px;
+      }
+      /* ya ne je menue che name ye te constant rahtil e.g. home about... te tya n chya ch jage var ti constant rahtil */
+      ul li {
+        position: relative;
+      }
+      ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #f3f3ff;
+        padding: 5px;
+      }
+      /* pseduo element [after] always need to write content:"";  */
+      ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 3px;
+        background-color: #ff5722;
+        transition: width 0.3s ease-in-out;
+      }
+      /* eith after element ha hover sobat call kela  */
+      ul li a:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Product</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </body>
+</html>

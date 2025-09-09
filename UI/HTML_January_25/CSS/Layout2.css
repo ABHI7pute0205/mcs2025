@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 60%;
+  min-height: 100px;
+  /* border: 1px solid #000; */
+  /* Margin : auto box horizontally center aan nya sathi */
+  margin: auto;
+}
+/* parent logo nav cha */
+.logo-nav {
+  width: 100%;
+  /* height: 60px; */
+  background-color: gray;
+}
+.logo-nav .logo {
+  width: 40%;
+  height: 60px;
+  float: left;
+  padding: 10px;
+}
+.logo-nav .nav {
+  width: 58%;
+  height: 60px;
+  float: right;
+  padding: 10px;
+}
+/* custom class Jo parent Float cha use ye to parent ha class  margin padding overlap zal tya sathi */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  background-color: lightgrey;
+  margin-top: 5px;
+  /* TEXT center sathi */
+  text-align: center;
+  line-height: 300px;
+}
+.intro {
+  width: 100%;
+  min-height: 100px;
+  background-color: gray;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.main-box {
+  width: 100%;
+  min-height: 200px;
+  margin-top: 5px;
+}
+/* 3 he box che height width same ye mhanun 3 box la same class write kela and same property delya  */
+.main-box .box {
+  width: 32%;
+  min-height: 200px;
+  background-color: darkgrey;
+  float: left;
+  margin-left: 10px;
+}
+
+.box:first-child {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* middle la target karnya sathi */
+.box:nth-child(2) {
+  margin-right: 5px;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: lightslategray;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 60px;
+}

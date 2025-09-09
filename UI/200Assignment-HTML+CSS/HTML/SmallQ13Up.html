@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            height: 500px;
+            border: 1px solid #000;
+            margin: auto;
+        }
+        .container .box{
+            width: 99%;
+            min-height: 50px;
+            /* padding: 5px; */
+            margin: 5px;
+            border: 1px solid #000;
+            background-color: lightskyblue;
+        }
+        .lf{
+            text-align: left;
+        }
+        .rt{
+            text-align: right;
+        }
+        .cen{
+            text-align: center;
+        }
+        .jfy{
+            text-align:justify;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 13.  Create a page with text using  <small>  tag.  -->
+
+    <small>
+      i am small tag -> i am showing the content to small as compaire to
+      original content means i can work with font-size
+    </small>
+    <br />
+    <br />
+
+    <!-- 14.  Create a page with highlighted text using  <mark> 
+    ==> this tag is used to mark some text as in a yellow background with black color text select the particular portion and put it in a mark tag it will automatically mark it as a yellow background with black color text  
+    ______________________________
+text-align: left; → Aligns text to the left.
+text-align: center; → Aligns text in the middle.
+text-align: right; → Aligns text to the right.
+text-align: justify; → Aligns text to both left and right, adjusting word spacing.
+In short: This page demonstrates all four text alignments in HTML & CSS.  
+    -->
+
+    <p>hey i am <mark>Abhishek Satpute</mark> From sukewadi</p>  <br> <br>
+
+    <!-- 15.  Design a page with different text alignments.
+    ==>  
+    -->
+
+    <div class="container">
+        <div class="box lf">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, suscipit laboriosam beatae facere tempora modi soluta rem pro
+        </div>
+        <div class="box rt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, suscipit laboriosam beatae facere tempora modi soluta rem
+        </div>
+        <div class="box cen">
+            Lorem ipsum dolor sit amet consectetur adipisicing <hr> here i use hr tag to add the one line between content OR seperate the content
+        </div>
+        <div class="box jfy">
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Odio, suscipit laboriosam beatae facere tempora modi soluta rem
+        </div>
+        
+    </div>
+
+    <!-- 16.  Use  <hr>  tag for separating sections. 
+    ==> <hr> stands for Horizontal Rule. It is used to separate content/sections with a horizontal line.
+        It is an empty tag (no closing tag). 
+    -->
+        <p>hi  i am XYZ person </p>
+        <!-- hr tag add's the horizontal line between two contents paragraph or any other content  -->
+        <hr>
+        <p>i am from XYZ place</p>
+        <hr>
+        <p>i want to become rich</p>
+
+        <!-- 17.  Create a page with nested paragraphs and inline text formatting. 
+        ==>   
+        -->
+
+        <p>
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus excepturi beatae ullam culpa totam eum amet odit, dolorum enim sit deserunt nisi aspernatur quo cupiditate iste vitae velit recusandae iusto.</b>
+            <p>
+                <i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima consequatur molestiae a quis neque laborum </i>
+                <small>culpa blanditiis similique inventore? Labore repudiandae sit rerum asperiores suscipit, rem magnam aperiam sint nulla?</small>
+                    
+                <p>
+                    <u>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima consequatur molestiae a quis neque</u>
+                    <mark> laborum culpa blanditiis similique inventore? Labore repudiandae sit rerum asperiores suscipit, rem magnam aperiam sint nulla? </mark>
+                </p>
+            </p>
+        </p>
+
+        <!-- 18.  Use  <code>  ,  <kbd>  , and  <samp>  tags to display code snippets.  -->
+
+            <p>
+                <code>Displays source code (monospace font).</code> <br> <hr>
+                <kbd>Represents keyboard input (keys pressed by the user)</kbd> <br> <hr>
+                <samp>Displays sample output from a program.</samp><br> <hr>
+            </p>
+
+    <!-- 19.  Create a page with a short poem using line breaks.  -->
+
+    <p>
+        twinkle twinkle littile khana <br>
+        my i go to rula <br>
+        how are you <br>
+        i am fine <br>
+    </p>
+
+    <!-- 20.  Demonstrate  <time>  tag for dates and time. 
+    => this tag is used to write date and time related content on web page     
+    -->
+
+        <time datetime="2025-08-29">29 August 2025</time>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an image map with Polygon clickable area</title>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../Image/apple.jpeg" usemap="#mymap" />
+      <map name="mymap">
+        <area
+          shape="poly"
+          coords="108,92,108,114,147,136,170,121,188,91,174,62,150,52,120,73"
+          href="https://www.google.com/"
+          target="_blank"
+        />
+      </map>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  min-height: 100px;
+  background-color: #eee;
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  /* same width che 3 column create kart  */
+  grid-template-columns: repeat(3, 1fr);
+  /* give height to row  */
+
+  /* 4 row's ye hyat 4 row la height dele  */
+  grid-template-rows: 50px 250px 300px 50px;
+
+  /* row column la gap det hya 2  */
+  /* grid-row-gap: 5px;
+  grid-column-gap: 5px; */
+
+  /* both row column direction la gap yeto */
+  gap: 10px;
+}
+.item {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: white;
+
+  /* flex with Grid work  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items1 {
+  background-color: crimson;
+  /*by default to row 1-2 madhe ye || ha box row 2 la start kela aani tya la row 3 la end kel */
+
+  /* grid-row-start: 2;
+  grid-row-end: 3; */
+  /* short cut of the above 2 property start-2 / end-3 */
+  /* grid-row: 2/3;
+
+  grid-column-start: 3;
+  grid-column-end: 4; */
+
+  /* hya property ne box 1 la starting pasun tar last parent merge hotat start: 1 / end :-1 */
+
+  /* grid-column: 1/-1; */
+}
+.items2 {
+  background-color: royalblue;
+  /* column 2 aani 3 merge hoil  */
+  grid-column: 2/-1;
+}
+.items3 {
+  background-color: orangered;
+  grid-column: 1/-1;
+}
+.items4 {
+  background-color: black;
+}
+.items5 {
+  background-color: green;
+  grid-column: 2/-1;
+}
+.items6 {
+  background-color: darkmagenta;
+  /* div box shifting ch ye  */
+  /* grid-row: 1/2;
+  grid-column: 1/2; */
+
+  grid-column: 1/-1;
+}

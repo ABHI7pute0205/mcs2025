@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a form with reset and submit buttons.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/brands.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 50%;
+            min-height: 200px;
+            border: 1px solid #000;
+            margin: auto;
+            margin-top: 5px;
+        }
+        .box h1{
+            text-align: center;
+            color: blue;
+        }
+        .box table{
+            border: 1px solid #000;
+            width: 95%;
+            min-height: 100px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .box table .btn{
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .btn button{
+            padding: 10px;
+            width: 30%;
+            /* border: none; */
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .btn button:hover{
+            background-color: lightslategray;
+            color: whitesmoke;
+            
+        }
+        .rset{
+            color: black;
+            background-color: darksalmon;
+        }
+        .sbit{
+            color: black;
+            background-color: lightseagreen;
+        }
+        .sbit i{
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <table>
+                <h1>Create a form with reset and submit buttons.</h1>
+
+                <tr>
+                    <td class="btn">
+                        <button class="rset"><i class="fa-solid fa-closed-captioning fa-beat-fade"></i>Reset</button>
+                    </td>
+                    <td class="btn">
+                        
+                        <button class="sbit"><i class="fa-solid fa-closed-captioning fa-beat-fade"></i>Submit</button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>

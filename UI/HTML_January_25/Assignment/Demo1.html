@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 60%;
+        min-height: 100px;
+        margin: auto;
+        border: 1px solid #000;
+        padding: 10px;
+      }
+      .box h2 {
+        color: lightseagreen;
+        text-align: center;
+      }
+      .box h2:hover {
+        transform: translateY(-5px);
+      }
+      /* table chya row la aani data la border to understand */
+
+      .box table tr,
+      td {
+        border: 1px solid lightskyblue;
+        padding: 5px;
+      }
+
+      .box table {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        border-collapse: collapse;
+      }
+      .lbl {
+        /* label je aane Enter full name te center la yeil*/
+        text-align: center;
+        font-size: 18px;
+      }
+      /* input type  means jya chyat[Box madhe] aapn data insert kar to tya la table chya According width height dya y che , comma deun multiple input type la same property apply karu shak to */
+      input[type="text"],
+      input[type="number"] {
+        width: 70%;
+        padding: 5px;
+        font-size: 17px;
+        /* outline: none  ; */
+      }
+      .rd {
+      }
+      input[type="radio"] {
+        font-size: 18px;
+      }
+
+      .birth {
+        width: 70%;
+        padding: 5px;
+        font-size: 17px;
+      }
+      .course {
+        width: 70%;
+        padding: 5px;
+        font-size: 17px;
+      }
+
+      #chk {
+      }
+      .lblcheck {
+        font-size: 18px;
+        padding: 5px;
+      }
+      input[type="checkbox"] {
+        /* means tya check box la check kelya natar tya cha color green hoil as per requirement we set it  */
+        accent-color: green;
+      }
+
+      .add{
+        width: 70%;
+      }
+
+      .regbtn{
+        width: 120px;
+        height: 40px;
+        background-color: royalblue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+      .clrbtn{
+        width: 120px;
+        height: 40px;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Student Registraction Form</h2>
+      <form>
+        <table>
+          <tr>
+            <td class="lbl">
+              <label for="fullname">Full Name</label>
+            </td>
+
+            <td>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Enter Full Name here"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="email">Enter Email Address</label>
+            </td>
+
+            <td>
+              <input type="text" placeholder="Enter email address here" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="mobile">Enter Mobile Number</label>
+            </td>
+
+            <td>
+              <input type="number" id="mobile" placeholder="Enter Mobile" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="gender">Gender</label>
+            </td>
+
+            <td>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                class="rd"
+              />
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" class="rd" />
+              <label for="female">Female</label>
+
+              <input type="radio" id="other" name="gender" class="rd" />
+              <label for="other">Other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="birth">Birth Date</label>
+            </td>
+
+            <td>
+              <input type="date" id="birth" name="birth" class="birth" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="course">Course</label>
+            </td>
+
+            <td>
+              <select name="course" class="course">
+                <option value="">Select</option>
+                <option value="MCS">MCS</option>
+                <option value="BE">BE</option>
+                <option value="BTech">B.Tech</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="doc">Documents</label>
+            </td>
+
+            <td>
+              <input type="checkbox" name="adhar" id="chk" />
+              <label for="adhar" class="lblcheck">Adhar</label>
+
+              <input type="checkbox" name="pan" id="chk" />
+              <label for="pan" class="lblcheck">PanCard</label>
+
+              <input type="checkbox" name="atm" id="chk" />
+              <label for="atm" class="lblcheck">ATMCard</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="country">Country</label>
+            </td>
+
+            <td>
+              <select name="country" class="course" name="country">
+                <option value="">Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UAE">UAE</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="state">State</label>
+            </td>
+
+            <td>
+              <select name="state" id="state" class="course">
+                <option value="">Select</option>
+                <option value="mha">Maharashtra</option>
+                <option value="up">UP</option>
+                <option value="Gujrat">Gujrat</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="city">City</label>
+            </td>
+
+            <td>
+              <input type="text" name="city"
+              placeholder="Enter city name">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="add">Address</label>
+            </td>
+
+            <td>
+              <textarea name="add" id="add" class="add" rows="5" cols="10"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <!-- ha td empty ka tar label cha area aani input type cha tar aaply la btn input area t pahije tya sathi ha td empty thevla  -->
+            </td>
+
+            <td>
+              <button class="regbtn">Register</button>
+
+              <button class="clrbtn">Clear</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

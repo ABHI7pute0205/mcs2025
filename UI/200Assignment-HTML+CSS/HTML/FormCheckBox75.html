@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a form with checkboxes for hobbies.</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 50%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+        margin-top: 10px;
+      }
+      .box h1,h2 {
+        color: lime;
+        text-align: center;
+        padding: 10px;
+      }
+      .box table {
+        border: 1px solid #000;
+        padding: 20px;
+        margin: 20px;
+      }
+      .lbl {
+        /* border: 1px solid #000; */
+        font-size: 22px;
+        padding: 5px;
+        text-align: center;
+        color: limegreen;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        transform: scale(1.5);
+        margin: 2px;
+        accent-color: lime;
+        text-align: center;
+      }
+      .chk {
+        font-size: 18px;
+        color: crimson;
+      }
+      .rd{
+        font-size: 18px;
+        color: darkslateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <table>
+          <h1>Q75. Check Boxes For Hobbies</h1>
+          <h2>Q76. Create a form with radio buttons for gender.</h2>
+          <tr>
+            <td class="lbl">
+              <label>What are Your Hobbies : </label>
+            </td>
+            <td class="chk"><input type="checkbox" />Travelling</td>
+            <td class="chk"><input type="checkbox" />Treaking</td>
+            <td class="chk"><input type="checkbox" />Reading</td>
+            <td class="chk"><input type="checkbox" />Playing Video games</td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label>What is Your Passion : </label>
+            </td>
+            <td class="chk"><input type="checkbox" />Private Sector</td>
+            <td class="chk"><input type="checkbox" />Government Sector</td>
+            <td class="chk"><input type="checkbox" />Business</td>
+            <td class="chk"><input type="checkbox" />Others</td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label>What is Your Passion : </label>
+            </td>
+            <td class="chk"><input type="checkbox" />Private Sector</td>
+            <td class="chk"><input type="checkbox" />Government Sector</td>
+            <td class="chk"><input type="checkbox" />Business</td>
+            <td class="chk"><input type="checkbox" />Others</td>
+          </tr>
+          <tr>
+            <td class="lbl">
+              <label>What is Your Passion : </label>
+            </td>
+            <td class="chk"><input type="checkbox" />Private Sector</td>
+            <td class="chk"><input type="checkbox" />Government Sector</td>
+            <td class="chk"><input type="checkbox" />Business</td>
+            <td class="chk"><input type="checkbox" />Others</td>
+          </tr>
+<tr>
+    <td><hr></td>
+    <td><hr></td>    
+    <td><hr></td>
+    <td><hr></td>
+    <td><hr></td>
+</tr>
+          <tr>
+            <td class="lbl">
+                <label for="gender">Select Your Gender</label>
+            </td>
+            <td class="rd">
+                <input type="radio" name="gender">Male
+            </td>
+            <td class="rd">
+                <input type="radio" name="gender">Female
+            </td>
+            <td class="rd">
+                <input type="radio"name="gender">Other
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

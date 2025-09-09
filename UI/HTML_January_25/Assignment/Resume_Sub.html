@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Submission form</title>
+
+    <style>
+        table{
+            /* width: 500px; */
+            border: 1px solid black;
+        }
+        td{
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+        label{
+            color: rgb(84, 48, 211);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="">
+
+        
+        <table>
+            <caption style="background-color: blueviolet; color: antiquewhite;">RESUME SUBMISSION FORM</caption>
+            <tr>
+                <td>
+                    <h3 style="color: blueviolet;">Personal Details</h3>
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <label>Enter  Name :</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="First Name">
+                    <input type="text"placeholder="Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="color: rgb(84, 48, 211);">Profile Picture</td>
+                <td><input type="file" accept="image/*, .pdf, .doc"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Enter YOur Email :</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="e-mail">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="mobile">Enter Mobile Number:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Mobile Number">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="color: rgb(84, 48, 211);">Website/Portfolio link :</td>
+                <td><input type="link" placeholder="link"></td>
+            </tr>
+
+            <tr>
+                <td>
+                     <label>Job Preferenced :</label>
+                </td>   
+                
+                <td>
+                    <select>
+                        <option>Select Any One</option>
+                        <option>Frontend</option>
+                        <option>Backend</option>
+                        <option>Full Stack</option>
+                        <option>Python Dev</option>
+                        <option>Web App Dev</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label >Prefered Technologies :</label>
+                </td>
+                <td>
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS
+                    <input type="checkbox">Jscript
+                    <input type="checkbox">Node JS
+                    <input type="checkbox">React
+                </td>
+            </tr>
+
+            <tr name="jtype">
+                <td>
+                    <label>preferred job type : </label>
+                </td>
+                <td>
+                    <input name="jtype" type="radio">Remote
+                    <input name="jtype" type="radio">Hybrid
+                    <input name="jtype" type="radio">On-Site
+                </td>
+            </tr>
+
+            <tr>
+                <td style="color: rgb(84, 48, 211);">
+                     Resume File:
+                </td>
+                <td>
+                    <input type="file" accept="image/*, .pdf, .doc">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Tricky Terms & Conditions : </lable>
+                    <input type="checkbox">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="color: red;">
+                    All Field Mandetory
+                </td>
+            </tr>
+             <tr>
+                <td colspan="2">
+                    <button style="background-color: rgb(110, 30, 153); color: azure;">Submit</button>
+                </td>
+             </tr>
+        </table>
+
+
+
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+
+    <!-- ya page madhe offline Bootstrap use kele aahe te kashi tar bootstrap chya official web-site var tun tya che zip-file download kele and ti extract karun tya t le .css and .js file he jith code kar to tya folder madhe add kele and tithun link kele -->
+
+    <div class="container">
+        <!-- navigation bar -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+        <!-- eka row madhe 2 part -->
+      <div class="row">
+        <!-- image cha colum  -->
+        <div class="col-md-6">
+          <img src="./Images/contact-us.jpg" class="img-fluid" />
+        </div>
+
+        <!-- form cha colum -->
+        <div class="col-md-6 mx-auto mt-5">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Name</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >mobile</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                </div>
+            </div>
+
+            <!-- button che row  -->
+            <div class="row">
+                <!-- tyat le 12 chya 12 col use kele  -->
+                <div class="col-12">
+                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            <!-- to add Footer  -->
+
+            <!-- yat aapn class row gheto means ek row create hote and tyat 12 outOf Kiti column use kara y che te tya chya inner div madhe declared kar to e.g 12/6 use kara y che like that and then tya chya aat  Bootstrap var tun copy kel l templete cha code kiva header foooter main content paste kar to  -->
+
+            <div class="row">
+              <div class="col-12">
+                  <div class="card text-center">
+                      <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#">Active</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+              </div>
+          </div>
+    </div>
+          
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a blog page with article and aside</title>
+    <style>
+      body {
+        background: #fff;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      main {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+      }
+      /*[flex: 1 (and flex: 3) in the blog layout CSS.] When we use Flexbox (display: flex;), child elements can share space dynamically.
+      flex: grow shrink basis;
+
+is a shorthand for:
+grow → how much the item grows relative to others
+shrink → how much it shrinks when space is tight
+basis → default size before growing/shrinking
+If you just write flex: 1; → it means:
+____________________
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 0;
+_________________
+.content {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
+_____________________
+.content (the blog articles) has flex: 3
+aside (sidebar) has flex: 1
+
+Available horizontal space is divided into 4 equal parts
+.content takes 3 parts
+aside takes 1 part
+So the layout becomes a 3:1 ratio (main content is wider than sidebar).
+-----------------------------------------
+Why use it?
+✅ Responsive sizing → No need to set fixed widths like width: 75% and width: 25%.
+✅ Flexible layout → If screen size changes, they resize proportionally.
+✅ Clean code → flex makes it easy to adjust ratios just by changing numbers
+_____________________________
+If screen width = 1000px:
+.content (flex:3) → 1000 × 3/4 = 750px
+aside (flex:1) → 1000 × 1/4 = 250px      
+
+*/
+      .content {
+        flex: 3;
+      }
+      article {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      article h2 {
+        margin-top: 0;
+        color: #0077cc;
+      }
+      aside {
+        flex: 1;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      aside h3 {
+        border-bottom: 2px solid #0077cc;
+      }
+      footer {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Tech Blog</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+        aliquid error quae ullam animi? Tenetur recusandae volup.
+      </p>
+    </header>
+
+    <!--main  -->
+
+    <main>
+      <!-- Content and sidebar he main che 2 child ye tar te display flex kelya var ti row direction la jatil -->
+
+      <div class="content">
+        <article>
+          <h2>Understanding HTML5 Semantic Tags</h2>
+          <p>
+            HTML5 introduced semantic elements like <code>&lt;header&gt;</code>,
+            <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code> that
+            help structure a webpage meaningfully.
+          </p>
+        </article>
+        <!-- second Article -->
+        <article>
+          <h2>Why Learn Java Script</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            aliquid quaerat nesciunt fugiat repudiandae beatae consequatur modi!
+            Repudiandae, velit. Corrupti itaque exercitationem ipsum labore id
+            ex laudantium commodi fugiat repellendus!
+          </p>
+        </article>
+      </div>
+
+      <!-- SideBar -->
+
+      <aside>
+        <h3>About me</h3>
+        <p>
+          article → Used for each independent blog post. aside → Contains side
+          content (about author, categories, recent posts). main uses flexbox →
+          divides screen into content + sidebar.
+        </p>
+
+        <h3>Recent Posts</h3>
+        <ul>
+          <li><a href="#">CSS Grid</a></li>
+          <li><a href="#">Flex Box Model</a></li>
+          <li><a href="#">Bootstrap Grid</a></li>
+        </ul>
+
+        <h3>CAtegories</h3>
+        <ul>
+          <li>Web developer</li>
+          <li>Programming</li>
+          <li>Technology</li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Footer Part -->
+    <footer>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+        provident doloribus voluptatum eligendi at minima suscipit harum
+        inventore, porro id dicta corporis optio culpa deleniti rerum eveniet
+        et, quaerat nobis?
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a form with autocomplete off.</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 50%;
+        min-height: 200px;
+        border: 1px solid #000;
+        margin: auto;
+        margin-top: 5px;
+      }
+      .box h1 {
+        text-align: center;
+        color: darkmagenta;
+      }
+      .box table {
+        /* border: 1px solid #000; */
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .lbl {
+        /* border: 1px solid #000; */
+        padding: 10px;
+        font-size: 22px;
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="file"]{
+        text-align: center;
+        padding: 10px;
+        width: 70%;
+        font-size: 18px;
+      }
+      .box select {
+        font-size: 18px;
+        width: 70%;
+        padding: 5px;
+        text-align: center;
+      }
+      input[type=":checkbox"] ,
+      input[type="image"] {
+        font-size: 15px;
+        color: red;
+        border-radius: 10px;
+      }
+      .box table td{
+        /* border: 1px solid #000; */
+        text-align: center  ;
+      }
+      .reset{ 
+        margin: 10px;
+        padding: 15px;
+        width: 90px;
+        text-align: center;
+        align-items: center;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form autocomplete="off" enctype="multipart/form-data">
+        <table>
+          <h1>Form with autocomplete Off , multiple select dropdown.</h1>
+
+          <tr>
+            <td class="lbl">
+              <label for="email">Enter Full Name :</label>
+            </td>
+            <td>
+              <input type="text" placeholder="Enter Email Here" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="email">Enter Email Id :</label>
+            </td>
+            <td>
+              <input type="email" placeholder="Enter Email Here" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="pass">Enter Password :</label>
+            </td>
+            <td>
+              <input type="password" placeholder="Password" />
+            </td>
+          </tr>
+          <!-- Create a form with multiple select dropdown. -->
+
+          <tr>
+            <td class="lbl">
+              <label for="lang">Select Your Programming Lanaguage : </label>
+            </td>
+            <td>
+              <select>
+                <option>Select</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>PHP</option>
+                <option>Java Script</option>
+                <option>CPP</option>
+                <option>C#</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Create a form with grouped checkboxes -->
+          <tr>
+            <td class="lbl">
+              <label for="hobbies">Indoor Hobbies</label>
+            </td>
+            <td>
+              <input type="checkbox" />Reading <input type="checkbox" />Watching
+              Cricket <input type="checkbox" />Sleeping
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="hobbies">OutDoor Hobbies</label>
+            </td>
+            <td>
+              <input type="checkbox" /> Plyaing Cricket
+              <input type="checkbox" /> Swwming
+              <input type="checkbox" /> Driving
+              <input type="checkbox" /> Traveling
+            </td>
+          </tr>
+
+          <!-- Create a form with grouped radio buttons. -->
+
+          <tr>
+            <td class="lbl">
+              <label for="gender">Select Gender</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" />Male
+              <input type="radio" name="gender" />FeMale
+              <input type="radio" name="gender" />Other
+            </td>
+          </tr>
+
+          <!-- Create a form with validation for required fields. -->
+          <!-- Used Required KeyWord  -->
+          <tr>
+            <td class="lbl">
+              <label for="email">Enter Full Name required :</label>
+            </td>
+            <td>
+              <input type="text" placeholder="Enter Email Here" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label for="email">Enter Email Id :</label>
+            </td>
+            <td>
+              <input type="email" placeholder="Enter Email Here" required />
+            </td>
+          </tr>
+          <!-- Create a form with maxlength and minlength attributes.  -->
+
+          <tr>
+            <td class="lbl">
+              <label>UserName : </label>
+            </td>
+            <td>
+              <input type="text" minlength="5" maxlength="10" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label>Password : </label>
+            </td>
+            <td>
+              <input type="password" minlength="4" maxlength="6" readonly />
+            </td>
+          </tr>
+
+          <!-- Create a form with pattern validation. -->
+
+          <tr>
+            <td class="lbl">
+              <label>UserName Only Letters 5-10 Chars: </label>
+            </td>
+            <td>
+              <input
+                type="text"
+                minlength="5"
+                maxlength="10"
+                pattern="[A-Za-z]{5-10}"
+                disabled
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="lbl">
+              <label>Password only digits Using pattern: </label>
+            </td>
+            <td>
+              <input
+                type="password"
+                minlength="4"
+                maxlength="6"
+                pattern="[0-9]{10}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="lbl">
+              <label>Autofocus attributes: </label>
+            </td>
+            <td>
+              <input type="text" pattern="[0-9]{10}" autofocus tabindex="1" />
+            </td>
+          </tr>
+          
+          <!-- Create a form with custom submit button image -->
+
+          <tr>
+            <td class="lbl">
+              <label>Custom image as a submit button</label>
+            </td>
+            <td>
+              <input type="image" src="../Image/HackImg.jpg" height="50px" width="100px" >
+            </td>
+          </tr>
+
+          <!-- Create a form with enctype for file upload -->
+           <!-- enctype="multipart/form-data"  apply this on form tag -->
+          <tr>
+            <td class="lbl">
+              <label for="file">Select File</label>
+            </td>
+            <td>
+              <input type="file" required>
+            </td>
+          </tr>
+          <!-- Create a form with button type reset -->
+
+          
+          
+          <tr>
+            <td colspan="2">
+              <button class="reset">Reset</button>
+            </td>
+          </tr>
+  
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

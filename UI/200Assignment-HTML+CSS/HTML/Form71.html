@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form with username and password.</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 50%;
+            min-height: 200px;
+            border: 1px solid #000;
+            margin: auto;
+            margin-top: 10px;
+            /* user name and password che field center la aana y che hote mhanun flex che property parent var ti lav le FLEX ha always parent var ti ch apply kara y cha content center la aan nya sathi table cha parent box ye mhanun */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box table{
+            border: 1px solid lightgreen;
+            margin: auto;
+            width: 100%;
+        }
+        .login{
+            text-align: center;
+            color: royalblue;
+        }
+        .login:hover{
+            transform: translateY(-10px);
+        }
+        .lbl{
+            padding: 15px;
+            /* border: 1px solid #000; */
+            font-size: 25px;
+            text-align: center;
+            color: crimson;
+        }
+
+        input[type="text"],
+        input[type="password"]{
+            width: 100%;
+            padding: 8px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <form>
+            <table>
+                <h2 class="login">Login</h2>
+                <tr>
+                    <td class="lbl">
+                        <label for="name">username : </label>
+                    </td>
+
+                    <td><input type="text" placeholder="Enter username"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">
+                        <label for="password">password : </label>
+                    </td>
+                    <td><input type="password" placeholder="Enter password"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

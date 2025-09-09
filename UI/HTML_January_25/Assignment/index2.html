@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+             width: 500px;
+        }
+        td,
+        table{
+            border: 1px solid black;
+            /* to collapse border of Table */
+            border-collapse: collapse;   
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <table>
+        <!-- colspan rowspan  1] konala merge kara y ch te  aani konasobat kara y ch [ colspan="1" no merging]   [colspan="2" to swatha aani tyachya pudhcha ] -->
+
+
+        <!-- jya la pan collapse kara y ch tyat colspan
+         rowspan lihi cha  -->
+
+        <!-- this will give caption to a table -->
+
+        <caption>Student Data</caption>
+
+        <!-- First Row -->
+        <tr>
+            <td colspan="2">1</td>
+            <!-- <td>2</td>
+            <td>3</td> -->
+        </tr>
+
+        <!-- Second Row -->
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+ 
+        <!-- Third Row -->
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+
+    <h1>Another Table</h1>
+
+
+
+    <table>
+
+        <!-- to select Colum of a TABLE -->
+
+        <colgroup>
+
+            <!-- <col style="background-color: red;"> -->
+
+            <col style="background-color: red;"span="2">
+            
+
+        </colgroup>
+
+        <tr>
+            <!-- Row one -->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- Row 2 -->
+            <td>1</td>
+            <!-- <td colspan="2" rowspan="2">2</td> -->
+             <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- Row 3 -->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- Row 4 -->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

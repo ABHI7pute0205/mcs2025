@@ -1,0 +1,38 @@
+100 basic classes of Bootstrap 
+
+https://docs.google.com/document/d/1lye5kAK7ocl2lt00g1KDuhlhd83870PK__1GeCBeiLw/edit?tab=t.0#heading=h.3j0iksyjw3bk
+
+________________________________________
+Bootstrap -> use to make web page responsive without using medai queries
+
+Two ways to use Bootstrap
+a. by using CND Link
+b. by using Offline mode 
+________________________________________
+b.  by using offline mode 
+[Comipled Css And Js dowload it and extract zip file and add in bootsrap folder where we want to use ] 
+- link .css in head section 
+
+- link js in body tag in script tag
+
+________________________________________
+bootsrap has 2 child classes 
+
+1. container  -> 80%
+2. container-fluid -> 100%
+
+-->
+
+- one container class has a multiple rows
+- in each row theire will be 12 columns 
+    col-1,col-2,col-3,col-4,....col-12
+________________________________________
+
+Bootstrap has the responsive classes like,
+
+1. sm -> small device
+2. me -> medium device(tab or dekstop)
+3. lg -> dekstop or projector , 80inc TV
+4. xl -> above 120inch
+5. xxl-> movie theater
+

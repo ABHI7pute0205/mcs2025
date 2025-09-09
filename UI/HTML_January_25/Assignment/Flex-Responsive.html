@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Flex-Responsive.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="../CSS/ism/css/my-slider.css" />
+
+  <script src="../CSS/ism/js/ism-2.2.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-menu">
+        <div class="logo">
+          <h1>Byte Code</h1>
+        </div>
+
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+      
+            <ul class="menu" id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+      
+              <li class="dropdown">
+                <a href="">Services</a>
+      
+                <ul class="submenu">
+                  <li><a href="#">Service1</a></li>
+                  <li><a href="#">Service2</a></li>
+                  <li><a href="#">Service3</a></li>
+                  <li><a href="#">Service4</a></li>
+                </ul>
+              </li>
+      
+              <li class="dropdown">
+                <a href="">Products</a>
+                <ul class="submenu">
+                  <li><a href="#">Product1</a></li>
+                  <li><a href="#">Product2</a></li>
+                  <li><a href="#">Product3</a></li>
+                  <li><a href="#">Product4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="slider">
+            <div
+              class="ism-slider"
+              data-play_type="loop"
+              data-interval="3000"
+              id="my-slider"
+            >
+              <ol>
+                <li>
+                  <img src="../CSS/ism/image/slides/beautiful-701678_1280.jpg" />
+                  <div class="ism-caption ism-caption-0">My slide caption text</div>
+                </li>
+                <li>
+                  <img src="../CSS/ism/image/slides/flower-729514_1280.jpg" />
+                  <div class="ism-caption ism-caption-0">My slide caption text</div>
+                </li>
+                <li>
+                  <img src="../CSS/ism/image/slides/summer-192179_1280.jpg" />
+                  <div class="ism-caption ism-caption-0">My slide caption text</div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="main-box">
+            <div class="box">
+                <img src="../Images/apple.jpeg" alt="">
+            </div>
+            <div class="box">
+                <img src="../Images/coding1.jpg" alt="">
+            </div>
+            <div class="box"><img src="../Images/jerry-remove-bg.png" alt=""></div>
+          </div>
+
+          <div class="banner">
+            <img src="../Images/testslider.png" alt="">
+          </div>
+
+          <div class="our-media">
+            <div class="title">
+              <h1>Our Media</h1>
+            </div>
+            <div class="slider1">
+              <div class="slider-track">
+        
+                <div class="card">
+                  <img src="../Images/nature.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/apple.jpeg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+        
+                <!-- here we maintain the track for this we can create the duplicate of this-->
+                
+                <div class="card">
+                  <img src="../Images/nature.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/apple.jpeg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+                <div class="card">
+                  <img src="../Images/Hackerimg.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <p>Website maintain by Byte Code &copy;2025
+            </p>
+          </div>
+      </div>
+    </div>
+
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+  
+        toggle.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table and Merged Rows and Discounts</title>
+</head>
+<style>
+    table,
+    td,
+    th{
+        width: 600px;
+        border: 1px solid black;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    td{
+        /* border: 1px solid red; */
+    }
+</style>
+<body>
+    
+    <form action="">
+        
+        <table>
+            <caption style="background-color: rgb(175, 24, 56); color: beige;">The Pricing Table</caption>
+            <tr>
+                <th>Plane Name </th>
+                <th>Features</th>
+                <th>Price</th>
+                <th>Subscription length</th>
+                <th rowspan="7"><img src="/Images/Plane.jpeg" height="200px" width="150px"> <a href="https://i.ytimg.com/vi/HxYSrEgOLdo/maxresdefault.jpg" target="_blank"> click here</a></th>
+            </tr>
+
+            <tr>
+                <td>Basic Plan</td>
+                <td rowspan="2">Get Extra 15 GB Per Month To Enjoy</td>
+                <td><a href="https://os-wordpress-media.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2021/11/23153007/Vi-4G-Prepaid-Plans-New-Rates-1024x597.png" target="_blank">149 ₹  </a></td>
+                <td>Monthly</td>
+            </tr>
+
+            <tr>
+                <td>Pro Plan</td>
+                <td><a href="https://os-wordpress-media.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2021/11/23153007/Vi-4G-Prepaid-Plans-New-Rates-1024x597.png" target="_blank">699 ₹  </a></td>
+                <td>3 Month</td>
+            </tr>
+
+            <tr>
+                <td>Premium</td>
+                <td rowspan="2">Get Extra 50 GB in Every 2 Months</td>
+                <td><a href="https://os-wordpress-media.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2021/11/23153007/Vi-4G-Prepaid-Plans-New-Rates-1024x597.png" target="_blank">1599 ₹  </a></td>
+                <td>9 Month</td>
+            </tr>
+
+            <tr>
+                <td>EnterPrice Plan</td>
+                <!-- <td>Get Extra 50 GB in Every 2 Months</td> -->
+                <td><a href="https://os-wordpress-media.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2021/11/23153007/Vi-4G-Prepaid-Plans-New-Rates-1024x597.png" target="_blank">2399 ₹  </a></td>
+                <td>Anual </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" style="background-color: lightgreen;">
+                    <!-- jar discount name tikad sisa y ch asl tar title tag kadhun taka y cha tya chya jagi td nahi tar dusra kahi tari taka y cha  -->
+                  Discounts
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="color: darkred;">By Any Pan And Get Vouchar cupans and 99 off Per Recharge </td>
+            </tr>
+            
+        </table>
+
+
+    </form>
+
+
+</body>
+</html>

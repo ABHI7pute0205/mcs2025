@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a navigation bar using anchor tags</title>
+    <style>
+      .box {
+        width: 60%;
+        min-height: 100px;
+        border: 1px solid #000;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .nav {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #000;
+        display: flex;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      .nav ul {
+        /* display flex ne sagle li he row direction la set zale and .nav madhlya justify-content ne  'ul' he emd means right side la shift hotil   */
+        display: flex;
+        border: 1px solid #000;
+        padding: 9px;
+        margin: 10px;
+      }
+      .nav ul li {
+        list-style-type: none;
+        margin: 0 5px;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        border: 1px solid #000;
+        margin: 3px;
+        padding: 3px;
+      }
+      .box1 {
+        width: 60%;
+        min-height: 100px;
+        /* border: 1px solid #000; */
+        margin: auto;
+        margin-top: 2%;
+      }
+      .box1 a {
+        text-decoration: none;
+        border: 1px solid #000;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: lightgreen;
+        color: black;
+        border: none;
+      }
+      .box1 a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Create a vertical navigation menu</h1>
+    <div class="box">
+      <div class="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Create a link with download attribute -->
+    <!-- using this download attribute we can set any file with download option => mhanje aapn href madhe je pan file theu image pdf o=kon ti link ti tya anchor la jar download attribute del tar ti file , image etc aaply system madhe download hote  -->
+    <div class="box1">
+      <a href="../Image/Logo.jpg" download="A-logo">download logo</a>
+    </div>
+
+    <!-- Create a link to a PDF file -->
+    <a href="./HTML_GIRI_Sir_NOTES.pptx" style="text-decoration: none"
+      >view html notes</a
+    >
+
+    <br />
+    <hr />
+    <!-- Create a link with image as anchor -->
+    <a href="https://www.google.com/?zx=1757006602285&no_sw_cr=1" target="_blank">
+      <img src="../Image/Logo.jpg" height="100px" width="100px" />
+    </a>
+  </body>
+</html>

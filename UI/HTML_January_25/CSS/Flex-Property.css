@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 530px;
+  /* height: 200px; */
+  border: 1px solid #000;
+  margin: auto;
+  background-color: #eee;
+  padding: 10px 20px;
+  display: flex;
+  /* flex-direction: column; */
+  /* by default row ch ast flex-direction: row; he nahi pass kel tari kahi hot nahi   */
+
+  /* flex-direction: row; */
+
+  /* div reverse order madhe print hotil row madhe ch  */
+  /* flex-direction: row-reverse; */
+
+  /*  mhanje je pan div container chya baher chal l le te container madhe ch adjust hotata [flex-wrap: wrap;] */
+
+  /* column madhe reversed order ne print  
+  flex-direction: column;
+  flex-wrap: wrap-reverse; */
+
+  display: flex;
+  flex-direction: row;
+
+  /* text-align chya aaivaje he property use kara y che content left right center la move kar nya sathi 
+    [justify-content: center;]
+    [justify-content: start;]
+    [justify-content: end;]*/
+
+  /* 1] justify-content: space-around; LIKE padding property sarkh use hot 4 side ne equally space bhetl 
+    hya property ne saglya div la equally space bhetn  
+    2] justify-content: space-between;
+    pratek div chya sagly side la inner side la equal space
+    3] justify-content: space-evenly;
+    saglya side ne inner / outer side ne equal sapce */
+
+  /* justify-content: space-evenly; */
+
+  /* to change the order jya la move kara y ch tya chya class madhe jay ch & order:-1; set kara y ch */
+}
+/* Common class for both 6 div's */
+.item {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 5px;
+
+  /*cover remaing space -> this property apply on common class it covers the space equaly  */
+  flex-grow: 1;
+}
+
+.item1 {
+  background-color: royalblue;
+}
+.item2 {
+  background-color: crimson;
+}
+.item3 {
+  background-color: orange;
+  /* box 1 chya jagi 3 jaiel  */
+  /* order: -1; */
+}
+.item4 {
+  background-color: darkgray;
+  /*  spacific box che size increase hoil */
+  flex-grow: 3;
+}
+.item5 {
+  background-color: darkgoldenrod;
+  /* box 3 chya aadhe yeil LEFT side la box arrenge hotil -1,-2,-3....- */
+  /* order: -2; */
+}
+.item6 {
+  background-color: forestgreen;
+}

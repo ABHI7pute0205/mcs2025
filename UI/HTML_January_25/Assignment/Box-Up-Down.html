@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* Body la jar height nahi dele parent container la te center la yet nahi  */
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 250px;
+        height: 250px;
+        border: 1px solid #000;
+        position: relative;
+        background-color: aqua;
+        /* jya div var ti box varti jya pan shape var ti animation chya property use kara y chya aahe tith hya 2 property [4] property complsory lihi la lag tat nahi tar animation apply hot nahi  */
+        animation-name: updown;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      /* animation kashe declared kara y che tya sathi @keyframes name che property ye te and then next give the name of the animation and in that write animation property it [in the @keyframes we declared a rules means here we can tell us from where to animation statrt and where it end so we defined rules in from and to and if we want to defined multiple rules for the same shape design , div we can use % [percentage] in % we defined multiple rules for single element like 0% {} 25%{} 50%{} 100%{} Like that] */
+      @keyframes updown {
+        0%,100% {
+          top: 0;
+        }
+        50%{
+          top: 200px;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
