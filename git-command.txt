@@ -1,0 +1,94 @@
+mcs@mcs-OptiPlex-5090:~/msc$ vi hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git init
+Reinitialized existing Git repository in /home/mcs/msc/.git/
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git add hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ vi hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git add hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hello.html
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git commit -a -m"First Commit" 
+[master b8d6192] First Commit
+ 1 file changed, 10 insertions(+)
+ create mode 100644 hello.html
+ ______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git remote add mcs2025 https://github.com/ABHI7pute0205/mcs2025.git
+error: remote mcs2025 already exists.
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git log
+commit b8d6192f556e8f824a66201e4d46daf52cc04ea4 (HEAD -> master)
+Author: ABHI7pute0205 <abhisheksatpute0205@gmail.com>
+Date:   Thu Sep 4 08:16:58 2025 +0530
+
+    First Commit
+
+commit 0f73f9debbb3cefbda9ed9c0ed0d640258ec58f5 (mcs2025/master)
+Author: ABHI7pute0205 <abhisheksatpute0205@gmail.com>
+Date:   Tue Sep 2 09:31:10 2025 +0530
+
+    second commit
+
+commit b0d2394da2a1fb7a9a634243ee48655dd0821583
+Author: ABHI7pute0205 <abhisheksatpute0205@gmail.com>
+Date:   Tue Sep 2 09:10:18 2025 +0530
+
+    mycommit
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git config --global user.name"ABHI7pute"
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git config --global user.email"abhisheksatpute0205@gmail.com"
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git remote add mcs2025 https://github.com/ABHI7pute0205/mcs2025.git
+error: remote mcs2025 already exists.
+______________________________________________________________________________________
+mcs@mcs-OptiPlex-5090:~/msc$ git push mcs2025 master
+
+Username for 'https://github.com': ABHI7pute0205
+Password for 'https://ABHI7pute0205@github.com': 
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 355 bytes | 355.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ABHI7pute0205/mcs2025.git
+   0f73f9d..b8d6192  master -> master
+   
+mcs@mcs-OptiPlex-5090:~/msc$ git status
+On branch master
+nothing to commit, working tree clean
+
